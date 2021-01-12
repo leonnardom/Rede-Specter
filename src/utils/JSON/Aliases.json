@@ -1,0 +1,126 @@
+{
+    "set": [
+        {
+            "aliase": [
+                "owner",
+                "dono"
+            ],
+            "type": "owner",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "gerente",
+                "sub-owner"
+            ],
+            "type": "gerente",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "coordenador",
+                "coord"
+            ],
+            "type": "coordenador",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "suporte",
+                "ajudante"
+            ],
+            "type": "suporte",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "developer",
+                "dev"
+            ],
+            "type": "developer",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "translater",
+                "tradutor"
+            ],
+            "type": "translater",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "designer",
+                "dzn"
+            ],
+            "type": "designer",
+            "danger": false
+        },
+        {
+            "aliase": [
+                "blacklist",
+                "lista-negra"
+            ],
+            "type": "blacklist",
+            "danger": true
+        }
+    ],
+    "emojiinfo": [
+        {
+            "aliase": [
+                "--help",
+                "--ajuda"
+            ],
+            "help": true,
+            "type": 0
+        },
+        {
+            "aliase": [
+                "--full",
+                "--img"
+            ],
+            "type": 1
+        },
+        {
+            "aliase": [
+                "--link",
+                "--url"
+            ],
+            "type": 2
+        }
+    ],
+    "maintencecmd": [
+        {
+            "aliase": [
+                "set",
+                "colocar",
+                "setar"
+            ],
+            "type": "Set",
+            "list": false,
+            "boolean": true,
+            "error": "alreadyInMaintence",
+            "send": "commandInMaintence"
+        },
+        {
+            "aliase": [
+                "unset",
+                "tirar",
+                "remover"
+            ],
+            "type": "UnSet",
+            "list": false,
+            "boolean": false,
+            "error": "alreadyUnMaintence",
+            "send": "commandUnMaintence"
+        },
+        {
+            "aliase": [
+                "list",
+                "lista",
+                "--list"
+            ],
+            "list": true
+        }
+    ]
+}

@@ -1,16 +1,20 @@
-const Guild = require("../../database/Schemas/Guild");
 const GetMention = (id) => new RegExp(`^<@!?${id}>( |)$`);
 const GetPrefix = (x, z) => z.find((xz) => x.content.startsWith(xz));
 const ClientEmbed = require("../../structures/ClientEmbed"),
   Emojis = require("../../utils/Emojis");
+  const Event = require("../../structures/Event.js");
 
-module.exports = class {
-  constructor(client) {
-    this.client = client;
-  }
+  module.exports = class MessageDelete extends (
+    Event
+  ) {
+    constructor(client) {
+      super(client);
+      this.client = client;
+      this.name = "message";
+    }
 
-  async run(message) {
-    if (message.author.bot == true) return;
+    async ON(message) {
+      if (message.author.bot == true) return;
 
     let prefix;
     prefix = ".";
