@@ -1,0 +1,18 @@
+{
+  "name": "new-specter",
+  "version": "1.0.0",
+  "description": "Discord Bot for New Specter ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "zSpl1nterUS_#6455",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "klaw": "^3.0.0",
+    "path": "^0.12.7"
+  }
+}
