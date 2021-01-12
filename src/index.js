@@ -1,5 +1,5 @@
 require('dotenv').config()
-const ClientEmbed = require("./structure/ClientEmbed");
+const ClientEmbed = require("./structures/ClientEmbed");
 const { Client, Collection } = require("discord.js");
 const klaw = require("klaw");
 const path = require("path");
