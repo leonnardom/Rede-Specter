@@ -7,7 +7,7 @@ module.exports = class {
     async run(message) {
         if (message.author.bot) return
 
-        const prefix = "/"
+        const prefix = process.env.PREFIX
 
         if (message.content.indexOf(prefix) !== 0) return
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
