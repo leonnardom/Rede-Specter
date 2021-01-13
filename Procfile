@@ -1,1 +1,1 @@
-zafrielRun: node ClientSharding.js
+SmoozeRun: node index.js
