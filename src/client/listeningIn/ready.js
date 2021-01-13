@@ -1,5 +1,5 @@
 const SLEEP = async () => {
-  return Number(30000);
+  return Number(60000);
 };
 
 module.exports = class {
