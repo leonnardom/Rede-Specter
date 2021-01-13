@@ -1,0 +1,56 @@
+{
+    "links": {
+        "suporte": "https://discord.gg/zX8Fq4V",
+        "vote": "https://zuraaa.com/bots/601847636546289664/",
+        "bot": "https://discord.com/oauth2/authorize?client_id=601847636546289664&permissions=20887631278&scope=bot"
+    },
+    "categories": {
+        "bot": "Bot",
+        "developer": "Desenvolvedores",
+        "information": "Informação",
+        "fun": "Diversão",
+        "mod": "Moderação",
+        "music": "Música:",
+        "utils": "Utils:",
+        "configuration": "Configuração",
+        "vip": "Vip"
+    },
+    "wolf": {
+        "1": "sim",
+        "2": "não",
+        "3": "não sei",
+        "4": "tudo depende do seu ponto de vista!",
+        "5": "eu não sei kkkj",
+        "6": "depende do que você quer dizer com isso rs",
+        "7": "não é da sua conta WOWOWOW",
+        "8": "sei lá kkkj vai saber",
+        "9": "hmmm eu acho q sim",
+        "10": "hm eu acho q não viu",
+        "11": "pode morrer q não vai fazer falta",
+        "12": "pelas minhas fontes eu diria q sim",
+        "13": "pelas minhas fontes eu diria q não kaka",
+        "14": "ih qual foi, isso lá é pergunta de se fazer?",
+        "15": "me paga uma coxinha e um refri q eu respondo :3",
+        "16": "vou pesquisar e te falo mais tarde pode crê?",
+        "17": "não faço idéia kakkakds",
+        "18": "Talvez sim",
+        "19": "Talvez não"
+    },
+    "ativado": "Ativado",
+    "desativado": "Desativado",
+    "sim": "Sim",
+    "não": "Não",
+    "nenhum": "Nenhuma",
+    "nenhum1": "Nenhum",
+    "noChannel": "Sem canal",
+    "loading": "carregando sua imagem.",
+    "nada": "Nada",
+    "time": {
+        "dias": "dias",
+        "horas": "horas",
+        "min": "minutos",
+        "seg": "segundos",
+        "anos": "anos",
+        "meses": "meses"
+    }
+}

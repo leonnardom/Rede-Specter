@@ -22,7 +22,7 @@ module.exports = class CommandUtils {
         const command = new (required)(this.client);
 
         if (!(command instanceof Command)) {
-            (OCURRED.error = true, OCURRED.errorEmit = "Not Found");
+            (OCURRED.error = true, OCURRED.errorEmit = t('errors:awaitReloadCommandNoCMD'));
             return OCURRED
         }
 

@@ -1,0 +1,264 @@
+{
+  "mentionBot": {
+    "bot": "Olá eu sou o **{{botname}}**, um Bot desenvolvido em `( JavaScript )`. Fui feito para ajudar vocês a se sentirem mais confortavéis em seu servidor!\n\nPara saber a lista dos meus comandos, basta digitar: **{{prefix}}help**",
+    "convites": {
+      "title": "Meus Link's",
+      "sup": "Servidor de Suporte",
+      "bot": "Meu Convite",
+      "vote": "Vote em Mim"
+    },
+    "footer": "Equipe Zafriel | Todos os Direitos Reservados!"
+  },
+  "list": {
+    "bot": "`blacklistt`, `botinfo`, `bugreport`, `cpu`, `guild`, `help`, `invite`, `ping`, `say`, `sugestão`, `uptime`, `shards`, `status`, `news`, `votes`",
+    "config": "`antifake`, `antinvite`, `autorole`, `byebye`, `config`, `contador`, `cmdblock`, `language`, `modlog`, `nickpadrao`, `deletar`, `prefix`, `serverstats`, `welcome`, `reset`, `cmd`, `mdelete`",
+    "developer": "`create`, `eval`, `manu`, `reload`, `reloadlocales`, `removerbot`, `set`, `att`, `svinvites`, `debug`",
+    "fun": "`creatememe`, `gay`, `wolf`, `reverse`, `ascii`, `emojify`, `vaporwave`, `fox`, `triggered`, `wanted`",
+    "anime": "`anime`, `neko`, `nekogif`, `waifu`, `kitsune`, `kemonomimi`",
+    "economy": "`daily`, `weekly`, `monthly`, `zcoins ( top, pay )`. `work ( info, name, up, top, help )`, `fazenda ( buy, name, recall, top, help )`, `bank ( deposit, withdraw )`, `steal`",
+    "casamento": "`casar`, `casamento`, `divorcio`",
+    "vip": "`vip`, `shop`",
+    "misc": "`xp`, `perfil`, `sobremim`, `background`, `coinbet`, `rep`, `reps`, `cooldown`, `backup`, `crates ( open, buy )`, `ticket ( open, buy )`",
+    "meme": "`laranjo`, `primeiraspalavras`, `violence`, `baby`, `change`, `jungle`, `piccolo`, `shit`, `stupid`, `perfect`",
+    "minecraft": "`mcbody`, `mcbust`, `mchead`, `mchelm`, `mcplayer`, `mcskin`, `mcserver`",
+    "image": "`hug`, `pat`, `slap`, `kiss`",
+    "utils": "`addemoji`, `copyemojis`, `docs`, `anime`, `spotify`, `calc`",
+    "information": "`covid`, `render`, `github`, `banlist`, `input`, `guilds`, `oldmembers`, `bigemoji`, `created`, `avatar`, `channelinfo`, `clima`, `convites`, `discrim`, `emojiinfo`, `lembrete`, `perms`, `roleinfo`, `servericon`, `serverinfo`, `steam`, `userinfo`",
+    "mod": "`anunciarc`, `anuncio`, `ban`, `createcanal`, `createcategoria`, `editartopico`, `guildname`, `kick`, `limpar`, `mute`, `off`, `offall`, `on`, `onall`, `renamechannel`, `setaricone`, `setposition`, `slowmode`, `unban`, `unmute`"
+  },
+  "reloadlocales": {
+    "loaded": "meu sistema de **LINGUAGEM** foi recarregado com **sucesso** e já pode ser usado normalmente!",
+    "noloaded": "desculpe ocorreu um erro ao tentar recarregar meu sistema de **LINGUAGEM**"
+  },
+  "reload": {
+    "noArgs": "Você deve inserir o **<nome/aliase>** do **COMANDO** que deseja **REINICIAR**",
+    "noCommand": "Desculpe mas o comando: **{{cmd}}** não foi encontrado em meus arquivos!!",
+    "error": "Erro ocorrido durante o processo de reiniciar comando: **{{err}}**",
+    "reloaded": "o comando, **{{cmd}}** foi recarregado com **sucesso** e já pode ser usado normalmente!"
+  },
+  "set": {
+    "noUserDb": "o usuário **{{user}}** não está cadastrado em minha `DATABASE`",
+    "hasApplied": "desculpe você não pode se **candidatar**!",
+    "noUserIdentify": "por favor **mencione** ou insira o **id** do usuário desejado!",
+    "noAliaseContent": "desculpe o **parâmetro** utilizado é inválido, os parâmetro são:\n`{{parameters}}`",
+    "noParameters": "Por favor utilize um *argumento*:\n `{{parameters}}`",
+    "setTo": "o usuário: **{{user}}** foi adicionado como: **__{{type}}__**!",
+    "banTo": "o usuário: **{{user}}** foi adicionado à: **__{{type}}__**!",
+    "unBanTo": "o usuário: **{{user}}** foi removido da: **__{{type}}__**!",
+    "unSetTo": "o usuário: **{{user}}** foi removido de: **__{{type}}__**!"
+  },
+  "roleinfo": {
+    "noArgs": "você deve inserir o <id/nome/menção> da role desejada!",
+    "noRole": "desculpe não consegui encontrar **nenhum** cargo para a pesquisa: ***{{searsh}}***!"
+  },
+  "bugreport": {
+    "wait": "Escreva o acontecido **detalhadamente `(2m)`**. Se puder forneça screenshots (link com a imagem do ocorrido)!.\nMais detalhes, mais cedo será resolvido 👍!",
+    "timeOut": "desculpe o tempo de resposta se esgotou! Tente **novamente**.",
+    "bugSend": "o bug foi enviado com sucesso! para mais informações entre em meu **[servidor de suporte]({{support}})** 👍.\nAcesse o que você enviou: **{{link}}**",
+    "fewFwords": "por favor epecifique mais o problema!! `(min. 30 carac.)`.",
+    "lotOfwords": "por favor seja breve, escreva menos!! `(max 150 carac.)`."
+  },
+  "sugestion": {
+    "wait": "Escreva a sugestão **detalhadamente `(2m)`**. Se puder dê exemplos de como o comando iria funcionar!\nMais detalhes, mais cedo será adicionado 👍!",
+    "timeOut": "desculpe o tempo de resposta se esgotou! Tente **novamente**.",
+    "bugSend": "sua sugestão foi enviada com sucesso! Para mais informações entre em meu **[servidor de suporte]({{support}})** 👍.\nAcesse o que você enviou: **{{link}}**",
+    "fewFwords": "por favor escreve mais sobre a sugestão!! `(min. 30 carac.)`.",
+    "lotOfwords": "por favor seja breve, escreva menos!! `(max 150 carac.)`."
+  },
+  "avatar": {
+    "imagem": "Clique **[aqui]({{avatar}})** para baixar a imagem."
+  },
+  "emojiinfo": {
+    "imagem": "Imagem do Emoji: **{{searh}}**",
+    "noArgs": "Por favor, insira o **<NOME/ID>** de algum **EMOJI**",
+    "noEmoji": "Não consegui econtrar nenhum **EMOJI** com a busca: ***{{searsh}}***!",
+    "getHelp": "Tenho as opções:\n**`{{options}}`**\n\nUse: `{{prefix}} {{name}} <NOME/ID> <opção>` para saber algumas coisas a mais do **EMOJI** e divirta-se!"
+  },
+  "prefix": {
+    "noArgs": "você deve inserir o **PREFIXO** desejado para eu alterar!",
+    "setPrefix": "meu prefixo no servidor foi alterado para: **{{PREFIX}}**",
+    "ultrapassedLength": "você não pode inserir um **PREFIXO** com mais de: **3 caracteres**",
+    "containsSpaces": "o **PREFIXO** não pode conter **ESPAÇOS**, remova os e tente novamente!"
+  },
+  "language": {
+    "noArgs": "você deve inserir qual linguagem deseja para eu setar!\nUse: **`{{prefix}} {{name}} {{help}}`** e veja quais **LINGUAGENS** tenho disponível no momento.",
+    "noLang": "desculpe a linguagem: **({{lang}})**, é inválida!\nUtilize **`{{prefix}} {{name}} {{help}}`** e veja quais **LINGUAGENS** tenho disponível no momento.",
+    "setLang": "a linguagem no servidor foi modificada para: **{{lang}}**",
+    "help": "As linguagens disponíveis no momento são:\n\n{{langs}}\n\nMude a linguagem usando: `{{prefix}} {{name}} <id>`"
+  },
+  "creatememe": {
+    "panel": "bem vindo ao meu painel de criação de **memes**!\nPor favor responda com um número de **1** a **{{size}}** respectivo ao meme que deseja **criar** logo abaixo! `(30seg)`",
+    "unavailableTemplate": "desculpe o template escolhido está **indisponível** no momento!\nTente outro **dia** ou entre em meu **[servidor de suporte]({{support}})** e saiba mais!",
+    "noResponseNumber": "desculpe a resposta **inserida** não é um número!\nExecute o comando novamente inserindo um número de **1** a **{{size}}**",
+    "unavailableNumber": "desculpe o número inserido é invalido.\nExecute o comando **novamente** inserindo um número de **1** a **{{size}}**",
+    "timeOut": "desculpe o tempo de resposta se esgotou! Tente **novamente**.",
+    "inserText": "insira o **{{i}}°** texto: `({{carac}}carac.)` `(60seg)`",
+    "surpassedLength": "desculpe você ultrapassou o limite de caractéres `({{length}}carac.)`! Tente **novamente**."
+  },
+  "maintencecmd": {
+    "alreadyUnMaintence": "desculpe mas o comando: **{{command}}** não está em manutenção!",
+    "alreadyInMaintence": "desculpe mas o comando: **{{command}}** já está em manutenção!",
+    "commandInMaintence": "o comando: **{{command}}** foi colocado em manutenção!",
+    "commandUnMaintence": "o comando: **{{command}}** foi retirado da manutenção!",
+    "noCommandDatabase": "o comando: **{{command}}** não está registrado em minha `DATABASE`",
+    "noCommand": "por favor insira o nome comando desejado para prosseguir!",
+    "noOption": "por favor insira uma opção: **`{{options}}`**",
+    "MaintenceList": {
+      "commands": "Comandos em manutenção:\n{{list}}",
+      "me": "Estou em manutenção?\n{{res}}",
+      "ctx": "Manutenção",
+      "none": "Nenhum",
+      "yes": "Sim",
+      "no": "Não"
+    },
+    "subcommands": {
+      "client": {
+        "falseUnSet": "desculpe mas eu não estou em **manutenção**!",
+        "falseSet": "desculpe mas eu já estou em **manutenção**!",
+        "trueSet": "fui colocado em **manutenção** com sucesso!",
+        "trueUnSet": "fui retirado da **manutenção** com sucesso!"
+      }
+    }
+  },
+  "vip": {
+    "infoTitle": "Informações sobre o **vip** de **{{user}}**",
+    "temp": "Tempo Restando",
+    "active": {
+      "ctx": "Ativado?",
+      "true": "Sim",
+      "false": "Não"
+    },
+    "getActiveInfo": {
+      "ctx": "Como Ativar ?",
+      "type": "**Vote em mim clicando [aqui]({{vote}})**!"
+    },
+    "dmNotifier": {
+      "ctx": "Deseja ativar ou desativar as notificações em sua DM ?",
+      "usage": "**Use `{{prefix}} {{name}} notifier`!**"
+    },
+    "notifier": {
+      "true": "As notificações em seu privado foram **ativadas**!",
+      "false": "As notificações em seu privado foram **desativadas**!"
+    }
+  },
+  "copyemojis": {
+    "noEmojisInServer": "desculpe, mas este servidor não contém emojis!",
+    "copySucess": "emojis do servidor copiado com sucesso!\nVocê já pode clonar eles em outro servidor!\nUtilize: **`{{prefix}} {{name}} add <[ID/NOME] do servidor salvo>`**",
+    "copyEmojisUpdate": "emojis copiados, e lista atualizada!\nAgora você já pode clonar eles em outros servidores!\nUtilize **`{{prefix}} {{name}} add <[ID/NOME] do servidor salvo>`**",
+    "subcommands": {
+      "list": {
+        "ctx": "Lista de seus emojis salvos:",
+        "noSavedEmojis": "Nenhum servidor salvo!",
+        "usage": "Use **`{{prefix}} copyemojis add <ID/NOME>`** para adicionar em seu servidor!"
+      },
+      "noArgsRemove": "por favor insira o **ID/NOME** do servidor que você deseja retirar dos emojis salvos.",
+      "noArgsSet": "por favor insira o **ID/NOME** do servidor que deseja copiar os emojis!",
+      "noGuildEmojis": "desculpe, mas o servidor inserido não está salvado!\nUse **`{{prefix}} copyemojis list`** e **verifique** os emojis salvos!",
+      "noSavedEmojis": "desculpe, mas você ainda não salvou nada!.",
+      "deleteSucess": "os emojis do servidor **{{guild}}** foram deletados da sua **DataBase** com sucesso!",
+      "copyInItServer": "desculpe mas você não pode copiar os emojis no mesmo servidor!",
+      "noServerFind": "desculpe não encontrei nenhum servidor salvo com oque você inseriu!\nUse **`{{prefix}} copyemojis list`** e **verifique** os emojis salvos!",
+      "finallyCopy": "consegui colar **{{size}}** emojis para o servidor!\nMas durante a operação aconteceu um **ERRO**, por não ter espaço o suficiente no servidor para mais emojis!",
+      "copySuccess": "emojis clonados com sucesso, faça bom proveito!"
+    }
+  },
+  "spotify": {
+    "notListening": "não está ouvindo **Spotify** no momento!"
+  },
+  "discrim": {
+    "inWindow": "você já está com uma jánela de discriminadores aberta, **finalize-a** ou aguarde **1 minuto**.",
+    "noArgs": "você deve **especificar** o **discriminador**.",
+    "discrimLength": "o **discriminador** deve conter **4 digitos**.",
+    "isNaN": "o **discriminador** deve ser um **número**.",
+    "notFound": "não foram encontrados usuários com o **discriminador** `{{discrim}}`.",
+    "title": "{{count}} Resultados: ( Shard [ {{shard}}/{{totalShard}} ] )",
+    "footer": "Página: {{pagina}} de"
+  },
+  "ship": {
+    "commandDescription": "Ship yourself or someone with somebody else.",
+    "commandUsage": "[first user] <second user>",
+    "noUser": "Please insert someone to ship!",
+    "messages": {
+      "high": {
+        "0": "The image says {{percent}}%, but I say 200%",
+        "1": "I always knew about {{shipName}}!",
+        "2": "{{shipName}}?!!? That's cute :3",
+        "3": "{{firstName}} you may kiss {{secondName}}!",
+        "4": "{{shipName}}?!!? OwO",
+        "5": "\"I accept that\" - a random Switchblade developer.",
+        "6": "{{firstName}}, don't be scared and DM {{secondName}}!"
+      },
+      "medium": {
+        "0": "{{firstName}} could try but I don't think {{secondName}} would want that.",
+        "1": "{{percent}}%... well... there are more people in the world you know...",
+        "2": "{{firstName}} and {{secondName}} could be friends, but maybe...",
+        "3": "{{shipName}}: I approve!",
+        "4": "{{secondName}}, do you approve this?",
+        "5": "Nothing is impossible!",
+        "6": "Seems like {{firstName}} and {{secondName}} are just strangers to each other."
+      },
+      "low": {
+        "0": "{{shipName}}? are you serious?",
+        "1": "{{shipName}}? I don't think {{firstName}} will like it.",
+        "2": "Nothing is impossible... but this is.",
+        "3": "owo what's this? {{shipName}}?? owo I'm out!",
+        "4": "{{secondName}} may not accept it, but I'm always here supporting you :)",
+        "5": "{{shipName}}? WHY?",
+        "6": "i think neither {{firstName}} and {{secondName}} liked it"
+      },
+      "self": {
+        "0": "Well, self love is everything.",
+        "1": "You may kiss yourself!",
+        "2": "\"I wish I had that confidence\" - a random Switchblade developer.",
+        "3": "...wait what?",
+        "4": "Lots of love for {{firstName}} and... {{secondName}}?",
+        "5": "Self love!! That's the spirit!!",
+        "6": "What a beautiful couple! {{firstName}} and... {{secondName}}?"
+      }
+    }
+  },
+  "minecraft": {
+    "server": {
+      "noIP": "você precisa me fornecer um IP primeiro.",
+      "unknownServer": "esse servidor está offline ou não existe.",
+      "server": "Minecraft Server",
+      "status": "Status",
+      "address": "IP",
+      "players": "Players",
+      "version": "Versão",
+      "online": "Online",
+      "offline": "Offline"
+    },
+    "namehistory": {
+      "commandDescription": "Shows the previous names of a Minecraft player, by username or UUID.",
+      "commandUsage": "<username/UUID>",
+      "noName": "You have to give me a username or a UUID.",
+      "unknownName": "Name or UUID not found.",
+      "title": "{{name}}'s name history!",
+      "originalname": "Original Name"
+    }
+  },
+  "neko": {
+    "hereIsYour_neko": "Aqui sua neko.",
+    "hereIsYour_lewd": "Aqui sua neko NFSW."
+  },
+  "waifu": {
+    "hereIsYour_sfw": "Aqui seu waifu.",
+    "hereIsYour_nsfw": "Aqui seu waifu NSFW."
+  },
+  "kemonomimi": {
+    "hereIsYour_kemonomimi": "Aqui seu kemonomimi!",
+    "hereIsYour_lewdkemo": "Aqui seu kemonomimi NSFW!"
+  },
+  "kitsune": {
+    "hereIsYour_fox_girl": "Aqui sua kitsune!",
+    "hereIsYour_lewdk": "Aqui sua kitsune NFW!"
+  },
+  "nekogif": {
+    "hereIsYour_ngif": "Aqui sua neko!",
+    "hereIsYour_nsfw_neko_gif": "Aqui sua neko NSFW!"
+  },
+  "fox": {
+    "hereIsYourFox": "Aqui sua imagem de uma raposa."
+  }
+}

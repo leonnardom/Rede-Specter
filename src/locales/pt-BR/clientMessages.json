@@ -1,0 +1,2101 @@
+{
+  "serverinfo": {
+    "name": "Nome:",
+    "boostn": "Nenhum",
+    "nivel": "Nível",
+    "shard": "Shards",
+    "shard2": "(**{{shard}}** / **{{totalShard}}**)",
+    "id": "ID:",
+    "region": "Região:",
+    "createdAt": "Data de criação:",
+    "owner": "Propietário:",
+    "ownerid": "ID do propietário:",
+    "verify": {
+      "ctx": "Nível de verificação:",
+      "level": {
+        "NONE": "Nenhum ( **0** )",
+        "LOW": "Baixo ( ( **1** )",
+        "MEDIUM": "Médio ( **2** )",
+        "HIGH": "Alto ( **3** )",
+        "VERY_HIGH": "Muito Alto ( **4** )"
+      }
+    },
+    "members": {
+      "ctx": "Total de usuários:",
+      "ctz": "{{size}}",
+      "users": "Nº de membros: ",
+      "bots": "Robôs: ",
+      "status": "Status dos membros:"
+    },
+    "status": {
+      "online": "Disponível: ",
+      "ausente": "Ausente: ",
+      "ocupado": "Não Pertubar: ",
+      "offline": "Invisível: "
+    },
+    "infos": {
+      "membros": "membros",
+      "cargos": "cargos",
+      "robos": "robôs",
+      "total": "usuários"
+    },
+    "entrada": {
+      "join": "Entrada do Zafriel:"
+    },
+    "channels": {
+      "ctx": "Canais: {{length}}",
+      "text": "Texto: ",
+      "voice": "Voz: ",
+      "category": "Categoria: "
+    },
+    "role": {
+      "ctx": "Nº de cargos:",
+      "n": "{{length}}",
+      "managed": "Gerenciáveis: ",
+      "noTags": "Nenhum",
+      "tags": "e mais {{length}}..."
+    },
+    "added": "Fui adicionado por"
+  },
+  "staff": {
+    "owner": "Fundadores:",
+    "gerente": "Gerentes:",
+    "coordenador": "Coordenadores:",
+    "suporte": "Suportes:",
+    "dev": "Desenvolvedores:",
+    "dzn": "Designers:",
+    "transl": "Tradutores:",
+    "none": "Nenhum"
+  },
+  "roleinfo": {
+    "name": "Nome:",
+    "id": "Identificação:",
+    "hexColor": "Hexadecimal:",
+    "mentionable": {
+      "ctx": "Mencionável:",
+      "true": "Sim",
+      "false": "Não"
+    },
+    "createdAt": "Data de Criação:",
+    "members": {
+      "ctx": "Membros: **({{size}})**",
+      "none": "Nenhum:",
+      "and": " e mais ***{{size}}***..."
+    },
+    "hoist": {
+      "ctx": "Destacável:",
+      "true": "Sim",
+      "false": "Não"
+    },
+    "position": {
+      "ctx": "Posição:",
+      "get": "**{{position}}** de: **{{size}}**"
+    }
+  },
+  "invite": {
+    "ctx": "Central de Links do Bot",
+    "bot": "Convite do Bot",
+    "suporte": "Servidor de Suporte",
+    "author": "Links Zafriel"
+  },
+  "userinfo": {
+    "name": "Nome do usuário:",
+    "id": "ID do usuário:",
+    "createdAt": "Conta criada em:",
+    "joinedAt": "Entrou no servidor em:",
+    "permissions": "Permissões:",
+    "dias": "dias",
+    "dispositives": "Dispositivo:",
+    "disp": {
+      "phone": "Celular",
+      "pc": "Computador"
+    },
+    "nof": "Nenhum",
+    "sttsp": "Status Personalizado",
+    "nickname": {
+      "ctx": "Apelido dentro do servidor:",
+      "none": "Nenhum"
+    },
+    "status": {
+      "ctx": "Status:",
+      "dnd": "Não Pertubar",
+      "idle": "Ausente",
+      "offline": "Indisponível",
+      "online": "Disponível"
+    },
+    "cor": {
+      "ctx": "#0039ff",
+      "dnd": "#0039ff",
+      "idle": "#0039ff",
+      "offline": "#0039ff",
+      "online": "#0039ff"
+    },
+    "jogando": {
+      "jogando": "Jogando"
+    },
+    "bot": {
+      "ctx": "Robô:",
+      "true": "Sim",
+      "false": "Não"
+    },
+    "role": {
+      "ctx": "Cargos dentro do servidor: **{{size}}**",
+      "and": " e mais: ***{{size}}***...",
+      "none": "Nenhum"
+    },
+    "server": {
+      "ctx": "Servidores compartilhados:",
+      "none": "`Nenhum`"
+    }
+  },
+  "channelinfo": {
+    "name": "Informações do Canal",
+    "mention": "Menção do Canal",
+    "createdAt": "Data de Criação",
+    "id": "ID",
+    "position": "Posição",
+    "topic": {
+      "ctx": "Tópico",
+      "noTopic": "Nenhum",
+      "topicImpossible": "`Impossível`"
+    },
+    "type": {
+      "ctx": "Tipo",
+      "voice": "Canal de Voz",
+      "category": "Categoria",
+      "text": "Canal de Texto"
+    }
+  },
+  "help": {
+    "description": "Olá, eu sou o Zafriel!\nUm Bot feito para facilitar a vida de vocês e também divertir todos, caso queria saber mais informações sobre um comando utilize **`{{prefix}}help <COMANDO>`**\n\nMeu Prefixo atual no Servidor: **`{{prefix}}`**\nAtualmente conto com **`{{total}}`** comandos e **`{{subtotal}}`** sub-comandos.",
+    "title": "Central de Ajuda",
+    "lista": {
+      "config": "Configuração",
+      "developer": "Desenvolvedor",
+      "fun": "Diversão",
+      "info": "Informação",
+      "mod": "Moderação",
+      "bot": "Bot",
+      "economy": "Economia",
+      "vip": "Vip",
+      "misc": "Miscelânea",
+      "anime": "Anime",
+      "meme": "Meme",
+      "minecraft": "Minecraft",
+      "casamento": "Casamento",
+      "utils": "Utilidades",
+      "image": "Imagem"
+    },
+    "command": {
+      "name": "Nome:",
+      "usages": "Utilizações:",
+      "aliases": {
+        "ctx": "Alternativas:",
+        "none": "Nenhuma"
+      },
+      "description": {
+        "ctx": "Descrição:",
+        "none": "Nenhuma"
+      },
+      "mePerms": {
+        "ctx": "Minhas Permissões:",
+        "none": "Nenhuma"
+      },
+      "userPerms": {
+        "ctx": "Permissões do Usuário:",
+        "none": "Nenhuma"
+      },
+      "needGuild": {
+        "ctx": "Responde **DM**:",
+        "true": "Não",
+        "false": "Sim"
+      }
+    }
+  },
+  "emojiinfo": {
+    "description": "Use: `{{prefix}} {{name}} {{help}}` para saber algumas informações a mais sobre este comando e divirta-se!",
+    "name": "Nome:",
+    "id": "ID:",
+    "identifier": "Identificador:",
+    "createdAt": "Data de Criação:",
+    "animated": {
+      "ctx": "Animado:",
+      "true": "Sim",
+      "false": "Não"
+    }
+  },
+  "vip": {
+    "vipSet": "foram adicionadas **{{hours}}** horas de acesso **vip** referente ao voto da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **vip**!",
+    "vipSetMultiple": "foram adicionadas **{{hours}}** horas de acesso **vip** referente aos votos da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **vip**!",
+    "vipUnSet": "o **vip** referente ao voto da {{dbl}} se esgotou. Você já pode votar novamente!\nVote e **reative** o seu vip!",
+    "vipUnSetMultiple": "o **vip** referente aos votos da {{dbl} se esgotaram. Você já pode votar novamente!\nVote e **reative** o seu vip!"
+  },
+  "ban": {
+    "perm": "eu não tenho permissão de executar este comando!",
+    "mention": "você deve mencionar o membro primeiro!",
+    "ctx": "você não pode banir a sí mesmo!",
+    "informado": "Não informado",
+    "nc": "eu não consegui banir o membro, provavelmente ele tem permissões mais altas que a minha!",
+    "title": "O usuário foi banido com sucesso!",
+    "id": "ID do usuário:",
+    "name": "Nome do usuário:",
+    "banido": "Banido por:",
+    "motivo": "Motivo da punição:",
+    "nologs": "como o sistema de **LOGS** não está ativo irei mandar a punição neste canal, e irei apagar em **1 minuto**!",
+    "cancelado": "ok, cancelei o banimento.",
+    "banir?": "deseja banir o membro:",
+    "banir?3": "pelo motivo:",
+    "sil": "Caso queria banir o membro silenciosamente, basta reagir no emoji:",
+    "punido": "usuário punido, ninguém mandou desobedecer as regras!"
+  },
+  "kick": {
+    "perm": "{{mat}}, eu não tenho permissão de executar este comando!",
+    "mention": "{{mat}}, você deve mencionar o membro primeiro!",
+    "acima": "eu não pude kickar o usuário poís ele tem um cargo acima que o meu!",
+    "ctx": "você não pode kickar a sí mesmo!",
+    "nc": "eu não consegui banir o membro, provavelmente ele tem permissões mais altas que a minha!",
+    "informado": "Não informado",
+    "title": "O usuário foi kickado com sucesso!",
+    "id": "ID do usuário:",
+    "name": "Nome do usuário:",
+    "kickado": "Kickado por:",
+    "motivo": "Motivo da punição:",
+    "nologs": "como o sistema de **LOGS** não está ativo irei mandar a punição neste canal, e irei apagar em **1 minuto**!",
+    "cancelado": "ok, cancelei o kick!",
+    "kickar?": "deseja kickar o membro:",
+    "kickar?3": "pelo motivo:",
+    "sil": "Caso queria kickar o membro silenciosamente, basta reagir no emoji:",
+    "punido": "usuário punido, ninguém mandou desobedecer as regras!"
+  },
+  "ativarc": {
+    "canal": "O canal:",
+    "ativado": "foi **ATIVADO** com sucesso pelo:",
+    "apagar": "Deseja apagar está mensagem? Basta reagir ao emoji abaixo!"
+  },
+  "desativarc": {
+    "canal": "O canal",
+    "desativado": "foi **DESATIVADO** com sucesso pelo:",
+    "apagar": "Deseja apagar está mensagem? Basta reagir ao emoji abaixo!"
+  },
+  "removerbot": {
+    "error": "você deve inserir um **ID** de servidor válido!",
+    "removido": "fui removido do servidor do **ID:**",
+    "sucesso": "com sucesso!"
+  },
+  "ativarcanais": {
+    "tudo": "Todos os canais foram **ATIVADOS** com sucesso pelo:"
+  },
+  "desativarcanais": {
+    "tudo": "Todos os canais foram **DESATIVADOS** com sucesso pelo:"
+  },
+  "etopico": {
+    "editar": "o tópico do canal:",
+    "alterado": "foi alterado para:",
+    "error": "você deve escrever um tópico primeiro para eu alterar!"
+  },
+  "anuncio": {
+    "ctx": "você deve escrever algo para anunciar primeiro!",
+    "anunciado": "Novo Anúncio",
+    "by": "Anúnciado por:",
+    "perm": "eu não tenho permissão de executar este comando!"
+  },
+  "sn": {
+    "perm": "eu não tenho permissão para usar este comando!",
+    "mention": "você deve mencionar o membro que deseja mudar o nome!",
+    "nconsegui": "não consegui encontrar o membro!",
+    "alterado": "O nickname do usuário:",
+    "alterado1": "foi alterado para:",
+    "nick": "você deve inserir o nick que deseja por no nome atual do membro!",
+    "noPerm": "este membro deve ter o **CARGO** maior que o meu, poís não conseguir alterar o nickname dele!!"
+  },
+  "mute": {
+    "mention": "você deve mencionar o membro que deseja mutar!",
+    "ninformado": "Não Informado",
+    "criado": "não encontrei o cargo **🦊 Zafriel Mute 🐾**, então vou cria-ló e mutar o membro!",
+    "mutei": "adicionei o cargo com sucesso!",
+    "noperm": "eu não tenho as permissões necessárias para mutar este membro!",
+    "mmutado": "Membro mutado:",
+    "mid": "ID do membro:",
+    "authorn": "Mutado por:",
+    "authorid": "ID do autor:",
+    "motivo": "Motivo da punição:",
+    "time": "você deve especificar o tempo que deseja mutar o membro!",
+    "expirado": "o tempo do mute do",
+    "expirado1": "acabou!",
+    "enviado": "seu mute no servidor",
+    "enviado1": "acabou, agora você pode voltar a falar normalmente!",
+    "timeembed": "Tempo do mute:",
+    "mutesend": "você foi mutado no servidor",
+    "mutesend1": "pelo tempo dê",
+    "mutesend2": "pelo motivo:",
+    "mutedd": "mutei o usuário:",
+    "mutedtime": "pelo tempo dê:",
+    "mutedmotivo": "pelo motivo:",
+    "jata": "este usuário já se encontra mutado no servidor!",
+    "nologs": "como o sistema de **LOGS** não está ativo irei mandar a punição neste canal, e irei apagar em **1 minuto**!",
+    "cancelado": "ok, cancelei o mute!",
+    "mutar?": "deseja mutar o membro:",
+    "mutar?2": "pelo tempo dê:",
+    "mutar?3": "pelo motivo:",
+    "sil": "Caso queria mutar o membro silenciosamente, basta reagir no emoji:",
+    "punido": "usuário punido, ninguém mandou desobedecer as regras!"
+  },
+  "guildname": {
+    "name": "você deve inserir o nome que deseja por no servidor!",
+    "perm": "eu não tenho permissão de executar este comando!",
+    "name1": "o nome do servidor foi alterado para:"
+  },
+  "cname": {
+    "name": "modo de usar o comando:",
+    "modo": "{{prefix}} canaltexto <#canal/ID> <nome>",
+    "perm": "eu não tenho permissão de executar este comando!",
+    "sucesso": "o canal",
+    "sucesso1": "foi renomeado com **sucesso** para"
+  },
+  "sp": {
+    "perm": "eu não tenho permissão de executar este comando!",
+    "alterado": "a posição do canal foi alterada para:",
+    "posição": "você deve inserir a posição que deseja mandar o canal!"
+  },
+  "convites": {
+    "title": "Lista de Convites!",
+    "convites": "Convites",
+    "perm": "eu não tenho permissão de executar este comando!"
+  },
+  "divulgador": {
+    "name": "Usuário:",
+    "recrutados": "Membros recrutados:"
+  },
+  "si": {
+    "valido": "você deve inserir um link válido!",
+    "alterado": "o ícone do servidor foi alterado com sucesso!",
+    "perm": "eu não tenho permissão de executar este comando!"
+  },
+  "ccanal": {
+    "perm": "eu não tenho permissão de executar este comando!",
+    "criado": "canal:",
+    "criado1": "foi criado com sucesso!",
+    "nome": "você deve inserir o nome do canal que deseja criar!"
+  },
+  "ccategoria": {
+    "perm": "eu não tenho permissão de executar este comando!",
+    "criado": "categoria:",
+    "criado1": "criada com sucesso!",
+    "nome": "você deve inserir o nome da categoria que deseja criar!"
+  },
+  "unban": {
+    "perm": "eu não tenho permissão de executar este comando!",
+    "id": "você deve inserir o **ID** do usuário para eu desbanir!",
+    "usuariom": "Usuário desbanido!",
+    "iduser": "ID do usuário:",
+    "desbanido": "Desbanido por:",
+    "idauthor": "ID do author:",
+    "sucesso": "o membro foi desbanido com **sucesso**!",
+    "nologs": "como o sistema de **LOGS** não está ativo irei mandar a punição neste canal, e irei apagar em **1 minuto**"
+  },
+  "unmute": {
+    "mention1": "você deve mencionar o membro que deseja tirar o mute!",
+    "user": "O usuário:",
+    "desmuted": "foi desmutado no servidor!"
+  },
+  "spotify": {
+    "here": "Clique Aqui",
+    "autor": "Autor(es):",
+    "album": "Albúm:",
+    "escute": "Escute também:",
+    "name": "Nome da música:",
+    "user": "O usuário:",
+    "ouvindo": "não está ouvindo **Spotify** no momento ou está com um status personalizado.",
+    "userr": "informações do **Spotify** do usuário:"
+  },
+  "uptime": {
+    "online": "Estou acordado há:"
+  },
+  "status": {
+    "stts": "Informações sobre o Bot!",
+    "users": "Total de usuários:",
+    "servers": "Total de servidores:",
+    "emojis": "Total de emojis:"
+  },
+  "cpu": {
+    "memory": "Memória sendo ultlizada:",
+    "discord": "Versão do Node:",
+    "CPU": "CPU:",
+    "cpus": "CPU sendo usada:",
+    "arch": "Arch:",
+    "plataforma": "Platafoma:",
+    "info": "Informações sobre a CPU do Bot!"
+  },
+  "clima": {
+    "info": "Informações sobre o clima da cidade:",
+    "fuso": "Fuso Horário:",
+    "sensation": "Sensação Térmica:",
+    "tipo": "Tipo de grau:",
+    "umidade": "Umidade do Ar:",
+    "temp": "Temperatura:",
+    "vento": "Ventos:",
+    "graus": "graus",
+    "noArgs": "você deve inserir o nome da **CIDADE** que desejar pesquisar o clima!"
+  },
+  "wolf": {
+    "pergunta": "**Wolf** é um velho amigo do **Zafriel**, os dois cresceram na mesma casa, que legal né?!\n\nComo ultilizar este comando? `{{prefix}}wolf <PERGUNTA>`"
+  },
+  "blacklist": {
+    "lista": "Lista dos usuários que estão na minha lista negra!"
+  },
+  "gay": {
+    "mention": ",você deve mencionar um membro primeiro.",
+    "acho": "Eu acho que o(a)",
+    "e": "é",
+    "gay": "gay"
+  },
+  "tapa": {
+    "mention": "você deve mencionar alguém primeiro.",
+    "tapa": "deu um tapa no(a)"
+  },
+  "pat": {
+    "mention": "você deve mencionar alguém primeiro.",
+    "pat": "fez carinho no(a)"
+  },
+  "hug": {
+    "mention": "você deve mencionar alguém primeiro;",
+    "hug": "deu um abraço no(a)"
+  },
+  "welcome": {
+    "removido": "sistema de **WELCOME** desativado!",
+    "removidoo": "o sistema de **WELCOME** não está ativado neste servidor!",
+    "nmsg": "você deve inserir a mensagem que deseja setar!",
+    "msg": "a mensagem de **WELCOME** foi definida para:",
+    "msg2": "Caso queira mudar o **MODO** de mensagem para **`EMBED`** basta ultilizar: `{{prefix}}welcome set embed`",
+    "msgg": "você deve digitar a mensagem desejada!",
+    "welcome": "canal de **WELCOME** definido para:",
+    "mention": "mencione o **<CANAL/ID>** desejado!",
+    "sNoArgs": "você deve inserir qual o modo deseja ativar `EMBED`, `NORMAL` ou `IMAGEM`, caso escolha `EMBED` e deseja que apareça o `AVATAR` do membro na mensagem, ultilize: **{{prefix}}welcome set avatar**",
+    "info": {
+      "stts": "Status: {{welcome}}",
+      "info": "{{prefix}}welcome msg <MENSAGEM>\n{{prefix}}welcome channel <#CANAL/ID>\n{{prefix}}welcome set <EMBED/NORMAL/AVATAR/IMAGEM>\n{{prefix}}welcome template\n{{prefix}}welcome title <TITLE>\n{{prefix}}welcome dm\n{{prefix}}welcome test\n{{prefix}}welcome on\n{{prefix}}welcome off\n{{prefix}}welcome help"
+    },
+    "help": {
+      "modo": "Modo ativo:",
+      "msg": "Mensagem setada:",
+      "usar": "Algumas informações pré-definidas!",
+      "canal": "Canal setado:",
+      "titulo": "Título setado:",
+      "status": "Status: {{welcome}}",
+      "usare": "{member} menciona o usuário\n{name} nome do usuário\n{users} quantidade de usuários no servidor\n{guild} nome do servidor",
+      "time": "Tempo setado para deletar a mensagem",
+      "timeNoSet": "Sistema não Ativado"
+    },
+    "set": {
+      "normal": "modo de mensagem **`NORMAL`** ativado!",
+      "embed": "modo de mensagem **`EMBED`** ativado!\nCaso queira que apareça a **FOTO** do usuário na **MENSAGEM** use: `{{prefix}}welcome set avatar`",
+      "avatar": "agora a **FOTO** do usuário irá aparecer na **`EMBED`**!",
+      "noembed": "o modo de mensagem **`EMBED`** não estava ativo, então não é possível ativar está opção!",
+      "title": "Agora você deve escolher o título da **`EMBED`**, use: `{{prefix}}welcome title`!",
+      "avatar1": "o sistema de **AVATAR** já estava ativado, não foi possível ativar novamente!",
+      "img": "sistema de **WELCOME** por **TEMPLATE** ativado.",
+      "imgOff": "o sistema já estava ativo, então eu desativei ele."
+    },
+    "ativado": {
+      "normal": "o modo de mensagem já estava ativo na opção: **`NORMAL`**, não é possível ativar novamente!",
+      "embed": "o modo de mensagem já estava ativo na opção: **`EMBED`**, não é possível ativar novamente!"
+    },
+    "test": {
+      "noSet": "sistema de **WELCOME** não está ativo no servidor!",
+      "send": "mensagem **TEST** do sistema de **WELCOME** enviado no canal que você setou, caso não tenha setado ainda use: `{{prefix}}welcome channel`"
+    },
+    "title": {
+      "noArgs": "você deve inserir qual **TÍTULO** deseja colocar na mensagem!",
+      "set": "**TÍTULO** setado!",
+      "noEmbed": "o modo de mensagem **EMBED** não está ativo, use: `{{prefix}}welcome set embed` e use o comando novamente!"
+    },
+    "on": {
+      "ativado": "sistema de **WELCOME** ativado!",
+      "ativadoo": "sistema de **WELCOME** já estava ativo!"
+    },
+    "dm": {
+      "nmsg": "você deve inserir a mensagem que deseja setar!",
+      "msg": "a mensagem que devo enviar na **DM** do membro foi definida para:",
+      "msg2": "Caso queira mudar o **MODO** de mensagem para **`EMBED`** basta ultilizar: `{{prefix}}welcome dm set embed`",
+      "msgg": "você deve digitar a mensagem desejada!",
+      "removido": "sistema de **WELCOME-DM** desativado!",
+      "removidoo": "sistema de **WELCOME-DM** não estava ativo!",
+      "help": {
+        "modo": "Modo ativo:",
+        "titulo": "Título setado:",
+        "msg": "Mensagem setada:",
+        "usar": "Algumas informações pré-definidas!",
+        "canal": "Canal setado:",
+        "status": "Status: {{dm}}",
+        "usare": "{name} nome do usuário\n{users} quantidade de usuários no servidor\n{guild} nome do servidor",
+        "time": "Tempo setado para deletar a mensagem",
+        "timeNoSet": "Sistema não Ativado"
+      },
+      "info": {
+        "stts": "Status: {{dm}}",
+        "info": "{{prefix}}welcome dm msg <MENSAGEM>\n{{prefix}}welcome dm set <EMBED/NORMAL/AVATAR>\n{{prefix}}welcome dm set title <TITLE>\n{{prefix}}welcome dm test\n{{prefix}}welcome dm on\n{{prefix}}welcome dm off\n{{prefix}}welcome dm help"
+      },
+      "test": {
+        "noSet": "sistema de **WELCOME-DM** não está ativo no servidor!",
+        "send": "mensagem **TEST** do sistema de **WELCOME-DM** enviado na sua **DM**!"
+      },
+      "on": {
+        "ativado": "sistema de **WELCOME-DM** ativado!",
+        "ativadoo": "sistema de **WELCOME-DM** já estava ativo!"
+      },
+      "title": {
+        "noArgs": "você deve inserir qual **TÍTULO** deseja colocar na mensagem!",
+        "set": "**TÍTULO** setado!",
+        "noEmbed": "o modo de mensagem **EMBED** não está ativo, use: `{{prefix}}welcome dm set embed` e use o comando novamente!"
+      },
+      "set": {
+        "normal": "modo de mensagem **`NORMAL`** ativado!",
+        "embed": "modo de mensagem **`EMBED`** ativado!\nCaso queira que apareça a **FOTO** do usuário na **MENSAGEM** use: `{{prefix}}welcome set avatar`",
+        "avatar": "agora a **FOTO** do usuário irá aparecer na **`EMBED`**!",
+        "noembed": "o modo de mensagem **`EMBED`** não estava ativo, então não é possível ativar está opção!",
+        "title": "Agora você deve escolher o título da **`EMBED`**, use: `{{prefix}}welcome title`!",
+        "noArgs": "você deve inserir qual modo desejar setar: **`EMBED`** ou **`NORMAL`**!",
+        "avatar1": "o sistema de **AVATAR** já estava ativado, não foi possível ativar novamente!",
+        "img": "sistema de **WELCOME** por **TEMPLATE** ativado.",
+        "imgOff": "o sistema já estava ativo, então eu desativei ele."
+      }
+    },
+    "bv": "Bem-Vindo",
+    "entrada": "Entrada Nº:",
+    "template": {
+      "desc": "aqui está a lista de templates que tenho atualmente.\n\n> Para setar uma template use **{{prefix}}bye template set <número da template>**",
+      "set": {
+        "noFind": "você deve escolher um número de template de **1** à **3**.",
+        "noActive": "o sistema de welcome por imagem não está ativo.",
+        "igual": "a template escolhida é a mesma setada atualmente.",
+        "sucess": "você ativou a template de número **{{template}}** com sucesso."
+      }
+    },
+    "time": {
+      "noArgs": "insira um número de **1** à **60** para eu setar em segundos para deletar a mensagem de welcome.",
+      "noOn": "o sistema de **WELCOME** encontra-se desativado, ative-o e use o comando novamente.",
+      "big": "você deve inserir um número de **1** à **60** no máximo.",
+      "igual": "o tempo inserido é o mesmo setado atualmente.",
+      "sucess": "ok, setei o tempo para deletar a mensagem de welcome em **{{time}} segundos**."
+    }
+  },
+  "byebye": {
+    "removido": "sistema de **BYE-BYE** desativado!",
+    "removidoo": "o sistema de **BYE-BYE** não está ativado neste servidor!",
+    "nmsg": "você deve inserir a mensagem que deseja setar!",
+    "msg": "a mensagem de **BYE-BYE** foi definida para:",
+    "msg2": "Caso queira mudar o **MODO** de mensagem para **`EMBED`** basta ultilizar: `{{prefix}}byebye set embed`",
+    "msgg": "você deve digitar a mensagem desejada!",
+    "byebye": "canal de **BYE-BYE** definido para:",
+    "mention": "mencione o **<CANAL/ID>** desejado!",
+    "sNoArgs": "você deve inserir qual o modo deseja ativar `EMBED` ou `NORMAL` caso escolha `EMBED` e deseja que apareça o `AVATAR` do membro na mensagem, ultilize: **{{prefix}}welcome set avatar**",
+    "info": {
+      "stts": "Status: {{byebye}}",
+      "info": "{{prefix}}byebye msg <MENSAGEM>\n{{prefix}}byebye channel <#CANAL/ID>\n{{prefix}}byebye template\n{{prefix}}byebye set <EMBED/NORMAL/AVATAR/IMAGEM>\n{{prefix}}byebye title <TITLE>\n{{prefix}}byebye dm\n{{prefix}}byebye test\n{{prefix}}byebye on\n{{prefix}}byebye off\n{{prefix}}byebye help"
+    },
+    "help": {
+      "modo": "Modo ativo:",
+      "msg": "Mensagem setada:",
+      "usar": "Algumas informações pré-definidas!",
+      "canal": "Canal setado:",
+      "titulo": "Título setado:",
+      "status": "Status: {{byebye}}",
+      "usare": "{name} nome do usuário\n{users} quantidade de usuários no servidor\n{guild} nome do servidor",
+      "time": "Tempo setado para deletar a mensagem",
+      "timeNoSet": "Sistema não Ativado"
+    },
+    "set": {
+      "normal": "modo de mensagem **`NORMAL`** ativado!",
+      "embed": "modo de mensagem **`EMBED`** ativado!\nCaso queira que apareça a **FOTO** do usuário na **MENSAGEM** use: `{{prefix}}byebye set avatar`",
+      "avatar": "agora a **FOTO** do usuário irá aparecer na **`EMBED`**!",
+      "noembed": "o modo de mensagem **`EMBED`** não estava ativo, então não é possível ativar está opção!",
+      "title": "Agora você deve escolher o título da **`EMBED`**, use: `{{prefix}}byebye title`!",
+      "avatar1": "o sistema de **AVATAR** já estava ativado, não foi possível ativar novamente!",
+      "img": "sistema de **WELCOME** por **TEMPLATE** ativado.",
+      "imgOff": "o sistema já estava ativo, então eu desativei ele."
+    },
+    "bv": "Bye Bye",
+    "entrada": "Membrosº:",
+    "template": {
+      "desc": "aqui está a lista de templates que tenho atualmente.\n\n> Para setar uma template use **{{prefix}}byebye template set <número da template>**",
+      "set": {
+        "noFind": "você deve escolher um número de template de **1** à **3**.",
+        "noActive": "o sistema de byebye por imagem não está ativo.",
+        "igual": "a template escolhida é a mesma setada atualmente.",
+        "sucess": "você ativou a template de número **{{template}}** com sucesso."
+      }
+    },
+    "ativado": {
+      "normal": "o modo de mensagem já estava ativo na opção: **`NORMAL`**, não é possível ativar novamente!",
+      "embed": "o modo de mensagem já estava ativo na opção: **`EMBED`**, não é possível ativar novamente!"
+    },
+    "test": {
+      "noSet": "sistema de **BYE-BYE** não está ativo no servidor!",
+      "send": "mensagem **TEST** do sistema de **BYE-BYE** enviado no canal que você setou, caso não tenha setado ainda use: `{{prefix}}byebye channel`"
+    },
+    "title": {
+      "noArgs": "você deve inserir qual **TÍTULO** deseja colocar na mensagem!",
+      "set": "**TÍTULO** setado!",
+      "noEmbed": "o modo de mensagem **EMBED** não está ativo, use: `{{prefix}}byebye set embed` e use o comando novamente!"
+    },
+    "on": {
+      "ativado": "sistema de **BYE-BYE** ativado!",
+      "ativadoo": "sistema de **BYE-BYE** já estava ativo!"
+    },
+    "dm": {
+      "nmsg": "você deve inserir a mensagem que deseja setar!",
+      "msg": "a mensagem que devo enviar na **DM** do membro foi definida para:",
+      "msg2": "Caso queira mudar o **MODO** de mensagem para **`EMBED`** basta ultilizar: `{{prefix}}byebye dm set embed`",
+      "msgg": "você deve digitar a mensagem desejada!",
+      "removido": "sistema de **BYE-BYE-DM** desativado!",
+      "removidoo": "sistema de **BYE-BYE-DM** não estava ativo!",
+      "help": {
+        "modo": "Modo ativo:",
+        "titulo": "Título setado:",
+        "msg": "Mensagem setada:",
+        "usar": "Algumas informações pré-definidas!",
+        "canal": "Canal setado:",
+        "status": "Status: {{dm}}",
+        "usare": "{name} nome do usuário\n{users} quantidade de usuários no servidor\n{guild} nome do servidor"
+      },
+      "info": {
+        "stts": "Status: {{dm}}",
+        "info": "{{prefix}}byebye dm msg <MENSAGEM>\n{{prefix}}byebye dm set <EMBED/NORMAL/AVATAR>\n{{prefix}}byebye dm set title <TITLE>\n{{prefix}}byebye dm test\n{{prefix}}byebye dm on\n{{prefix}}byebye dm off\n{{prefix}}byebye dm help"
+      },
+      "test": {
+        "noSet": "sistema de **BYE-BYE-DM** não está ativo no servidor!",
+        "send": "mensagem **TEST** do sistema de **BYE-BYE-DM** enviado na sua **DM**!"
+      },
+      "on": {
+        "ativado": "sistema de **BYE-BYE-DM** ativado!",
+        "ativadoo": "sistema de **BYE-BYE-DM** já estava ativo!"
+      },
+      "title": {
+        "noArgs": "você deve inserir qual **TÍTULO** deseja colocar na mensagem!",
+        "set": "**TÍTULO** setado!",
+        "noEmbed": "o modo de mensagem **EMBED** não está ativo, use: `{{prefix}}byebye dm set embed` e use o comando novamente!"
+      },
+      "set": {
+        "normal": "modo de mensagem **`NORMAL`** ativado!",
+        "embed": "modo de mensagem **`EMBED`** ativado!\nCaso queira que apareça a **FOTO** do usuário na **MENSAGEM** use: `{{prefix}}byebye set avatar`",
+        "avatar": "agora a **FOTO** do usuário irá aparecer na **`EMBED`**!",
+        "noembed": "o modo de mensagem **`EMBED`** não estava ativo, então não é possível ativar está opção!",
+        "title": "Agora você deve escolher o título da **`EMBED`**, use: `{{prefix}}byebye title`!",
+        "noArgs": "você deve inserir qual modo desejar setar: **`EMBED`** ou **`NORMAL`**!",
+        "avatar1": "o sistema de **AVATAR** já estava ativado, não foi possível ativar novamente!"
+      },
+      "time": {
+        "noArgs": "insira um número de **1** à **60** para eu setar em segundos para deletar a mensagem de byebye.",
+        "noOn": "o sistema de **BYEBYE** encontra-se desativado, ative-o e use o comando novamente.",
+        "big": "você deve inserir um número de **1** à **60** no máximo.",
+        "igual": "o tempo inserido é o mesmo setado atualmente.",
+        "sucess": "ok, setei o tempo para deletar a mensagem de byebye em **{{time}} segundos**."
+      }
+    }
+  },
+  "autorole": {
+    "set": {
+      "off": "o sistema de **AUTO-ROLE** não está ativo! Ative-o e use o comando novamente!",
+      "noArgs": "você deve inserir o **<NOME/ID/MENCIONAR>** o cargo que deseja por no **AUTO-ROLE**!",
+      "set": "agora o membro que entrar vai receber a **TAG**: <@&{{AUTOROLE}}> - `[{{limite}}/5]`\nCaso deseja adicionar mais **ROLES** use: **`{{prefix}}autorole set <ROLE>`**\nE caso queira saber quais **ROLES** já estão adicionadas use: **`{{prefix}}autorole list`**",
+      "jTa": "o cargo mencionado já estava na lista, não foi possível adiciona-lo novamente!",
+      "max": "o máximo de roles para colocar no sistema de **AUTO-ROLE** é **5 cargos**. Remova algum e adicione o cargo desejado novamente.",
+      "position": "desculpe, mas este cargo está acima do meu, escolha um cargo menor ou me coloque acima do cargo desejado."
+    },
+    "remove": {
+      "off": "o sistema de **AUTO-ROLE** não estava ativo, então não foi possível desativa-lo!",
+      "removed": "sistema de **AUTO-ROLE** desativado!",
+      "noArgs": "você deve inserir **<ID/NOME/MENCIONAR>** o cargo que deseja remover do sistema de **AUTO-ROLE**!\nCaso algum cargo fique com @deleted-role, use **`{{prefix}}autorole remove all`** e adicione somente os cargos que existem novamente.",
+      "noInclued": "o cargo mencionado não estava na lista de **AUTO-ROLE**!",
+      "roleremoved": "o cargo: <@&{{AUTOROLE}}> foi removido do sistema de **AUTO-ROLE**!",
+      "all": "todos os cargos foram removidos do sistema de **AUTO-ROLE** com sucesso.",
+      "allN": "não havia nenhum cargo setado no sistema de **AUTO-ROLE**."
+    },
+    "on": {
+      "jTa": "o sistema de **AUTO-ROLE** já está ativo, não foi possível ativar novamente.",
+      "on": "sistema de **AUTO-ROLE** ativado com sucesso."
+    },
+    "list": {
+      "lista": "Lista dos cargos que serão adicionados ao membro entrar:\n\n{{AUTOROLES}}\n\nLimite: **[{{limite}}/5]**",
+      "noffen": "não há nenhum cargo na lista, use: **`{{prefix}}autorole set <CARGO>`** para adicionar algum!"
+    },
+
+    "autorole": {
+      "stts": "Status: {{autorole}} - `[{{limite}}/5]`",
+      "help": "{{prefix}}autorole set <CARGO>\n{{prefix}}autorole remove <CARGO>\n{{prefix}}autorole on\n{{prefix}}autorole off\n{{prefix}}autorole list"
+    }
+  },
+  "deletar": {
+    "delete": {
+      "info": "{{prefix}}deletar on\n{{prefix}}deletar off\n{{prefix}}deletar tempo <TEMPO>",
+      "stts": "Status: {{delete}}",
+      "tempo": "Tempo setado para deletar as mensagens do Bot: {{tempo}}!"
+    },
+    "tempo": {
+      "number": "voce deve inserir um tempo para deletar as mensagens, somente números!",
+      "max": "o número máximo que você pode inserir é **`60 = 1 minuto!`**",
+      "igual": "o tempo que você inseriu já está setado no momento, não foi possível trocar!",
+      "set": "o tempo para deletar minhas mensagens de comandos foi alterado para {{tempo1}}",
+      "error": "não é possível setar o tempo para deletar minhas mensagens em **0** ou algum **número menor**!"
+    },
+    "on": {
+      "jTa": "o sistema de deletar minhas mensagens já está ativado, não foi possível ativar novamente!",
+      "on": "sistema de deletar minhas mensagens ativado com sucesso!\nTempo setado atualmente: **{{tempo}}**",
+      "error": "não foi possível ativar o sistema poís o tempo para deletar as minhas mensagens está setado em **0**, use **`{{prefix}}deletar <tempo>`** para alterar o tempo!"
+    },
+    "off": {
+      "jTa": "o sistema de deletar minhas mensagens já está desativado, não foi possível desativar novamente!",
+      "off": "sistema de deletar minhas mensagens desativado com sucesso!"
+    }
+  },
+  "contador": {
+    "contador": "canal do **CONTADOR** definido para:",
+    "noMsg": "não havia nenhuma mensagem setada para o contador, use **{{prefix}}contador msg <MSG>**",
+    "mention": "mencione o **<CANAL/ID>** desejado!",
+    "msg": "mensagem do **CONTADOR** definida para:",
+    "removido": "**CONTADOR** removido do servidor!",
+    "removidoo": "**CONTADOR** não está ativado no momento!",
+    "noOn": "sistema de **CONTADOR** já estava ativo.",
+    "on": "sistema de **CONTADOR** ativado.\n\nCanal setado: <#{{canal}}>, mensagem do contador: **`{{mensagem}}`**",
+    "big": "desculpe, mas o máximo de caracteres para inserir na mensagem de contador é de **60 Letras**, diminua seu texto e use o comando novamente.",
+    "small": "sua mensagem para o contador deve conter mais de **15 caracteres**.",
+    "length": "A que você inseriu possui **{{length}} caracteres**.",
+    "igual": "você não pode inserir a mesma mensagem para ser setado no contador, escolha outra.",
+    "info": {
+      "stts": "Status:",
+      "required": "( NO <SET> USE {contador} PARA COLOCAR O NÚMERO DE MEMBROS EM EMOJIS! CASO NÃO COLOQUE NÃO IRÁ FUNCIONAR )",
+      "info": "{{prefix}}contador msg <MENSAGEM>\n{{prefix}}contador set <#CANAL/ID>\n{{prefix}}contador off\n{{prefix}}contador on\n{{prefix}}contador help"
+    },
+    "help": {
+      "msg": "Mensagem setada:",
+      "usar": "Uso **REQUIRIDO**!",
+      "usare": "{contador} coloca o total de usuários em EMOJIS!",
+      "canal": "Canal setado:",
+      "status": "Status:"
+    }
+  },
+  "antinvite": {
+    "on": {
+      "on": "sistema de **ANT-INVITE** ativado no servidor!\nAgora você deve escolher uma mensagem para quando o membro divulgar ela ser enviada! Use: **`{{prefix}}antinvite msg <MENSAGEM>`**.",
+      "ON": "o sistema de **ANT-INVITE** já estava ativo no servidor, não foi possível ativar novamente!"
+    },
+    "help": {
+      "help": "{{prefix}}antinvite msg <MENSAGEM>\n{{prefix}}antinvite channels\n{{prefix}}antinvite role list\n{{prefix}}antinvite help\n{{prefix}}antinvite on\n{{prefix}}antinvite off",
+      "msg": "Mensagem setada: {{msg}}",
+      "stts": "Status: {{antinvite}}",
+      "cargos": "Cargos com permissão: **{{roles}}**",
+      "help2": "{member} menciona o usuário\n{name} nome do usuário",
+      "pre": "Algumas informações pré-definidas!"
+    },
+    "msg": {
+      "set": "ativei o sistema de **ANTI-INVITE** e setei a mensagem para:",
+      "set1": "mensagem de **ANTI-INVITE** definida para:",
+      "noArgs": "você deve inserir qual mensagem deseja por!"
+    },
+    "list": {
+      "lista": "Lista dos cargos que podem divulgar normalmente no servidor",
+      "title": "Comandos:",
+      "lista2": "{{prefix}}antinvite role add <ROLE>\n{{prefix}}antinvite role remove <ROLE>",
+      "noffen": "você não adicionou nenhum **CARGO**, então somente membros com permissão de **`ADMINISTRATOR`** vão poder divulgar, para adicionar algum cargo use: **`{{prefix}}antinvite role add <NOME/ID/MENCIONE>`**"
+    },
+    "add": {
+      "noArgs": "você deve inserir o **<CANAL>** o cargo que deseja adicionar na lista dos cargos com permissões para divulgar servidores aqui!",
+      "have": "esse cargo já está na **LISTA**!",
+      "add": "adicionei o cargo <@&{{role}}>, na **LISTA** com sucesso!"
+    },
+    "remove": {
+      "noInclude": "este **CARGO** não estava na **LISTA**, use: **`{{prefix}}antinvite role list`** para saber todos os **CARGOS** que estão adicionados!",
+      "removed": "removi o **CARGO** <@&{{role}}> com sucesso!",
+      "noArgs": "você deve inserir o **<CANAL>** do cargo que deseja remover da lista dos cargos com permissão de divulgar aqui!"
+    },
+    "channels": {
+      "off": "o sistema de **ANTI-INVITE** não estava ativo, use: **`{{prefix}}antinvite on`** e use o comando novamente!",
+      "add": {
+        "noMention": "você deve mencionar o canal que deseja permitir **ENVIO DE CONVITES**!",
+        "add": "canal: <#{{canal}}> foi adicionado na lista de canais que pode divulgar **CONVITES** de **DISCORD**!",
+        "jTa": "o canal: <#{{canal}}> já estava adicionado na lista, não foi possível adicionar ele novamente!"
+      },
+      "remove": {
+        "noMention": "você deve mencionar o canal que deseja remover a permissão de **ENVIAR CONVITES**!",
+        "remove": "canal: <#{{canal}}> foi removido da lista de canais que pode divulgar **CONVITES** de **DISCORD**!",
+        "jTa": "o canal: <#{{canal}}> não estava na lista, não foi possível remover ele.!"
+      },
+      "help": {
+        "help": "Canais que são permitidos divulgar: {{clista}}",
+        "noLength": "não há nenhum canal adicionado! Use: **`{{prefix}}antinvite channels add <CANAL>`** para adicionar algum na lista!"
+      },
+      "noArgs": "comandos disponíveis:",
+      "cmds": "{{prefix}}antinvite channels add <CANAL>\n{{prefix}}antinvite channels remove <CANAL>\n{{prefix}}antinvite channels list"
+    },
+    "stts": "Status:",
+    "ajudaa": "{{prefix}}antinvite on\n{{prefix}}antinvite remove",
+    "removido": "sistema de **ANT-INVITE** removido!",
+    "removidoo": "o sistema de **ANT-INVITE** não está ativado no momento!",
+    "a": "Como funciona? Todos os **CARGOS** que você adicionar e o membro tiver o mesmo, ele irá ter perm de enviar convites de outro **Discord** aqui, caso não houver nenhum cargo adicionado somente membros com permissão de **ADMINISTRATOR** irão ter permissão!"
+  },
+  "slowmode": {
+    "ativado": "**SLOW MODE** ativado no canal:",
+    "seg": "no tempo dê:",
+    "set": "para ativar o **SLOW MODE** no seu servidor ultilize da seguinte forma: `{{prefix}}slowmode <TEMPO>`\nExemplo: `{{prefix}}slowmode 5`\n\nE para remover use: `{{prefix}}slowmode 0` ou então `{{prefix}}slowmode remove`",
+    "removido": "**SLOW MODE** removido!",
+    "error": "erro ao adicionar o **SLOW MODE** ao canal:"
+  },
+  "steam": {
+    "noArgs": "você deve falar o nome do **JOGO** que deseja pesquisar!",
+    "plataforma": "Platafoma:",
+    "caract": "Características:",
+    "dev": "Desenvolvedor:",
+    "tipo": "Tipo do jogo:",
+    "preço": {
+      "preço": "Valor:",
+      "inicial": "Preço inicial:",
+      "final": "Preço final:",
+      "desconto": "Desconto dê:",
+      "zero": "Sem Desconto",
+      "gratis": "De Graça",
+      "noDesconto": "Sem Desconto"
+    }
+  },
+  "botinfo": {
+    "criador": "Dono:",
+    "title1": "Informações do Bot",
+    "uptime": "Tempo online:",
+    "users": "Usuários:",
+    "servers": "Servidores:",
+    "canais": "Canais:",
+    "criação": "Criação:",
+    "comandos": "Total de Comandos:",
+    "comandos1": "Total de Comandos Ultilizados:",
+    "title2": "Sobre Hospedagem:",
+    "memory": "Memória RAM:",
+    "latencia": "Latência:",
+    "node": "Versão do Node:",
+    "title3": "Mais Informações",
+    "linguagem": "Linguagem de Progamação:",
+    "discord": "Discord.JS:",
+    "prefixo": "Prefixo no Servidor:",
+    "prefixo1": "Prefixo Padrão:",
+    "title4": "Links do Bot",
+    "cservidor": "Servidor de Suporte",
+    "cbot": "Convite do Bot",
+    "cvote": "Vote no Bot"
+  },
+  "config": {
+    "index": "Menu de informação dos comandos feitos em **DataBase**.",
+    "prefix": "Prefixo no Servidor:",
+    "language": "Linguagem atual no servidor:",
+    "welcome": "Sistema de Welcome:",
+    "byebye": "Sistema de ByeBye:",
+    "autorole": "Sistema de AutoRole:",
+    "logs": "Sistema de Logs:",
+    "contador": "Sistema de Contador:",
+    "antifake": "Sistema de AntiFake:",
+    "serverstats": "Sistema de ServerStats:",
+    "modulos": "Módulos Ativos:",
+    "antinvite": "Sistema de AntiInvite:",
+    "deletar": "Deletar Mensagens:",
+    "noset": "Não setado",
+    "cmdblock": "Sistema de CmdBlock",
+    "nickpadrao": "Sistema de Nick Padrão"
+  },
+  "lembrete": {
+    "lembrete": "Lembrete",
+    "lembrando": "Está mensagem é automática, estou apenas te lembrando o que você havia pedido!\nEstou aqui para te lembrar dê:",
+    "time": "insira o tempo!",
+    "args": "insira o lembrete que deseja por!",
+    "ok": "ok, em `{{tempo}}` irei mandar uma mensagem em sua **DM** te lembrando dê: `{{lembrete}}`"
+  },
+  "addrole": {
+    "mention": "você deve mencionar/inserir o ID do cargo que deseja que eu adicione em todos os membros do servidor!"
+  },
+  "antifake": {
+    "stts": "Status:",
+    "ajudaa": "{{prefix}}antifake days\n{{prefix}}antifake on\n{{prefix}}antifake off",
+    "on": "sistema de **ANTI-FAKE** ativado no servidor!",
+    "days": "sistema de **ANTI-FAKE** definido para:",
+    "days1": "dias, agora membros que entrarem no seu servidor e sua conta tiver sido criada a menos dias do que o setado, irão ser kickados.",
+    "msgg": "error!",
+    "noArgs": "insira um número primeiro!",
+    "number": "você deve inserir um número!",
+    "removidoo": "o sistema de **ANTI-FAKE** não estava ativado no servidor!",
+    "removido": "sistema de **ANTI-FAKE** desativado no servidor!",
+    "kickado": "foi kickado do servidor pelo sistema de **ANTI-FAKE**",
+    "infodays": "Dias:",
+    "igual": "o número que você escolheu já estava setado em dias, escolha outro."
+  },
+  "ads": {
+    "enviado": "anúncio enviado no canal:",
+    "deseja": "deseja enviar a mensagem:",
+    "canal": "no canal:",
+    "mentionc": "mencione o canal primeiro!",
+    "msg": "você deve escrever o que deseja anunciar primeiro!",
+    "cancel": "anúncio cancelado!"
+  },
+  "invites": {
+    "perm": "não tenho a permissão: `MANAGE_INVITES`"
+  },
+  "serverstats": {
+    "criando": "um momento, estou criando os canais!",
+    "criado": "canais criados com sucesso!",
+    "ativados": {
+      "total": "`Total de Membros` já estava ativo!",
+      "users": "`Total de Usuários` já estava ativo!",
+      "bots": "`Total de Bot's` já estava ativo!",
+      "canais": "`Status Total de Canais` já estava ativo!",
+      "categorias": "`Status Categorias` já estava ativo!",
+      "texto": "`Status Canais de Texto` já estava ativo!",
+      "voz": "`Status Canais de Voz` já estava ativo!"
+    },
+    "desativados": {
+      "total": "`Total de Membros` não estava ativo!",
+      "users": "`Total de Usuários` não estava ativo!",
+      "bots": "`Total de Bot's` não estava ativo!",
+      "canais": "`Status Total de Canais` não estava ativo!",
+      "categorias": "`Status Categorias` não estava ativo!",
+      "texto": "`Status Canais de Texto` não estava ativo!",
+      "voz": "`Status Canais de Voz` não estava ativo!"
+    },
+    "desligado": {
+      "total": "`Total de Membros` desativado!",
+      "users": "`Total de Usuários` desativado!",
+      "bots": "`Total de Bot's` desativado!",
+      "canais": "`Status Total de Canais` desativado!",
+      "categorias": "`Status Categorias` desativado!",
+      "texto": "`Status Canais de Texto` desativado!",
+      "voz": "`Status Canais de Voz` desativado!"
+    },
+    "categoria": "categoria não existente!",
+    "serverstats": "{{prefix}}serverstats on\n{{prefix}}serverstats remove",
+    "stts": "Status:",
+    "info": "Você pode alterar o nome da **`CATEGORIA`**, mas se quisar desativar o sistema depois a categoria não será deletada. Agora os **`canais de informação`** mesmo você editando ele volta pro de criação!",
+    "noArgs": "você deve inserir qual canal deseja deletar. No momento temos: `total`, `membros` e `bots`\nCaso queria deletar todos use `{{prefix}}svstats remove all`",
+    "noArgs2": "você deve inserir qual canal deseja adicionar. No momento temos: `total`, `membros` e `bots`\nCaso queria adicionar todos use `{{prefix}}svstats add all`"
+  },
+  "st": {
+    "jpossui": "este membro já possui o cargo!",
+    "setado": "Cargo:",
+    "setado1": "setado no membro:",
+    "user": "você deve **`<MENCIONAR/INSERIR O ID>`** do usuário que deseja adicionar a tag!",
+    "cargo": "você deve **`<MENCIONAR/INSERIR O ID>`** do cargo que deseja adicionar ao membro!",
+    "noPerm": "este membro deve ter o **CARGO** maior que o meu, poís não conseguir setar!"
+  },
+  "antipalavrao": {
+    "msg": "você não pode falar **PALAVRÕES** aqui, se controle!",
+    "antipalavrao": "{{prefix}}antipalavrao on\n{{prefix}}antipalavrao remove",
+    "stts": "Status:",
+    "on": "sistema de **ANTI-PALAVRÃO** ativado no servidor!",
+    "removido": "sistema de **ANTI-PALAVRÃO** removido!",
+    "removidoo": "o sistema de **ANTI-PALAVRÃO** não está ativado no momento!"
+  },
+  "nickpadrao": {
+    "on": "sistema de **NICK-PADRAO** ativado no servidor!\nNick que vai ser setado em todos os membros assim que entrarem: {{nick}}",
+    "stts": "Status:",
+    "nickpadrao": "{{prefix}}nickpadrao on\n{{prefix}}nickpadrao nick <NICK>\n{{prefix}}nickpadrao off",
+    "removido": "sistema de **NICK-PADRAO** removido!",
+    "removidoo": "o sistema de **NICK-PADRAO** não está ativado no momento!",
+    "a": "Como o sistema funciona? Todos os membros que entrarem eu vou setar o **NICK** que você escolher!",
+    "nick": "ERROR!",
+    "nickk": "**NICK** setado para:",
+    "nickp": "Nick Setado:",
+    "noArgs": "você deve inserir o **NICK** desejado!",
+    "noffen": "Nenhum Nickname setado."
+  },
+  "cmdblock": {
+    "cmdblock": {
+      "stts": "Status: `{{cmdblock}}`",
+      "args": "{{prefix}}cmdblock on\n{{prefix}}cmdblock off\n{{prefix}}cmdblock msg <MSG>\n{{prefix}}cmdblock add <canal>\n{{prefix}}cmdblock remove <canal>\n{{prefix}}cmdblock help"
+    },
+    "on": {
+      "ativado": "sistema de **CMD-BLOCK** ativado, canais que estavam setados:\n\n{{canais}}",
+      "noBlock": "não havia nenhum canal setado, use: **`{{prefix}}cmdblock add <CANAL>`** e use o comando novamente!",
+      "ativado2": "o sistema de **CMD-BLOCK** já estava ativado, não foi possível ativar novamente!"
+    },
+    "off": {
+      "desativado": "sistema de **CMD-BLOCK** desativado!",
+      "ativado2": "o sistema de **CMD-BLOCK** já estava desativado, não foi possível desativar novamente!"
+    },
+    "help": {
+      "painel": "Status: {{cmdblock}}",
+      "cmds": "{member} menciona o membro\n{name} coloca o nome do user",
+      "msg": "Mensagem: `{{msg}}`",
+      "canal": "Canais: {{chs}}",
+      "noffen": "NENHUM"
+    },
+    "add": {
+      "noArgs": "você deve mencionar o canal que deseja adicionar primeiro! Use: **`{{prefix}}cmdblock add <CANAL>`**",
+      "exist": "o canal: <#{{canal}}> já está adicionado na lista!",
+      "add": "canal: <#{{canal}}> adicionado com sucesso á lista!"
+    },
+    "remove": {
+      "noArgs": "você deve mencionar o canal que deseja excluir, use: **`{{prefix}}cmdblock remove <CANAL>`**\n\nCanais que estão na adicionados no momento:\n{{canais}}\n\nCaso queira desativar o sistema use: **`{{prefix}}cmdblock remove system`**",
+      "notFound": "não encontrei este canal na minha lista!\n\nOs canais que estão adicionados no momento são:\n{{canais}}",
+      "removed": "removi o canal: {{canal}} com sucesso da lista!",
+      "system": "sistema de **CMD-BLOCK** removido!",
+      "systemof": "o sistema de **CMD-BLOCK** já estava desativado, não foi possível desativar novamente!"
+    },
+    "msg": {
+      "defined": "mensagem definida para: **`{{msg}}`**",
+      "noArgs": "você deve inserir qual mensagem deseja setar primeiro, use: **`{{prefix}}cmdblock msg <MENSAGEM>`**"
+    }
+  },
+  "registrar": {
+    "registrar1": {
+      "painel": "{{prefix}}registrar help\n{{prefix}}registrar info\n{{prefix}}registrar registrar\n{{prefix}}registrar remove\n{{prefix}}registrar set\n{{prefix}}registrar unregister"
+    },
+    "info": {
+      "usert": "Informação do sistema de **REGISTRO** na Conta!",
+      "guildt": "Informações do sistema de **REGISTRO** no Servidor!",
+      "guild": "Cargo de Registrador: {{registrador}}\nMembros registrados no total: **`{{nregistrados}}`**",
+      "user": "A conta é um Registrador? **`{{registradoru}}`**\nMembros que a conta já registrou no total: **`{{nuregistrados}}`**"
+    },
+    "set": {
+      "mention": "você deve mencionar o **CARGO** que deseja setar como **REGISTRADOR**!",
+      "jTa": "o cargo mencionado já estava setado como cargo de **REGISTRADOR**!",
+      "trocar?": "você deseja trocar o cargo de **REGISTRADOR**: <@&{{registradoratual}}> pelo cargo: {{registradornovo}} ?",
+      "trocou": "cargo de **REGISTRADOR** atualizado!",
+      "cancel": "ok, não troquei o cargo de **REGISTRADOR**!",
+      "trock": "cargo de **REGISTRADOR** setado no cargo: {{registradornovo}}"
+    },
+    "remove": {
+      "noffen": "não há nenhum **CARGO** setado como **REGISTRADOR**! Use: **`{{prefix}}registrar set <CARGO>`**",
+      "remover?": "deseja remover o **CARGO**: <@&{{registradorrole}}> do **CARGO** de **REGISTRADOR**!?",
+      "removed": "ok, o **CARGO** de **REGISTRADOR** foi removido!",
+      "cancel": "ok, não removi o **CARGO** de **REGISTRADOR**!"
+    },
+    "unregister": {
+      "noRole": "você não é um **REGISTRADOR**!",
+      "mention": "você deve mencionar o membro que deseja tirar o **REGISTRO**!",
+      "noRegister": "o membro mencionado não se encontra registrado!",
+      "unRegister": "o membro: <@{{membro}}> foi removido da lista de **REGISTRADOS**!",
+      "ctx": "você não pode retirar seu própio registro!"
+    },
+    "registrar": {
+      "noRoleG": "não há um cargo adicionado no sistema de **REGISTRADOR**, use: **`{{prefix}}registrar set <CARGO>`** para adicionar um!",
+      "noRole": "você não é um **REGISTRADOR**, chame algum Staff caso queira se tornar um!",
+      "mention": "você deve mencionar o membro que deseja registrar!",
+      "jTa": "o membro mencionado já foi registrado pelo Staff:!",
+      "registrado": "você registrou o membro: <@{{membro}}> com sucesso, agora você possuí: `{{registros}}` registrados na sua conta!",
+      "registrado1": "você foi registrado pelo usuário: **`{{staff}}`** no servidor: **`{{servidor}}`** com sucesso!",
+      "DMoff": "a **DM** do usuário estava desativada, não foi possível enviar mensagem para ele!",
+      "ctx": "você não pode se auto-registrar!",
+      "bot": "não é possível registrar **BOT'S**!"
+    },
+    "help": {
+      "help": "{{prefix}}registrar set <CARGO>\n{{prefix}}registrar register <MEMBRO>\n{{prefix}}registrar unregister <MEMBRO>\n{{prefix}}registrar info <MEMBRO>\n{{prefix}}registrar remove <CARGO>"
+    }
+  },
+  "lblacklist": {
+    "ajuda": {
+      "stts": "Status: **`{{lblacklist}}`**",
+      "info": "{{prefix}}blacklist on\n{{prefix}}blacklist off\n{{prefix}}blacklist cargos\n{{prefix}}blacklist canais\n{{prefix}}blacklist links\n{{prefix}}blacklist info"
+    },
+    "add": {
+      "noArgs": "você deve inserir um **LINK** para adicionar a lista!",
+      "jTa": "o link: `{{link}}` já está na lista!",
+      "max": "você atingiu o número máximo de **LINKS ( 30 )**!",
+      "add": "o link: `{{link}}` foi adicionado a lista! **`{{links}} / 30`**\nCaso coloque algo que não seja um **LINK** o bot vai bloquear da mesma forma, então use o comando corretamente!"
+    },
+    "remover": {
+      "noArgs": "você deve inserir qual link deseja remover! Caso queria remover todos, use: **`{{prefix}}blacklist remove all`**",
+      "nhave": "este link não está na lista!",
+      "removed": "o link: `{{linkr}}` foi removido com sucesso! **`{{rlinks}} / 30`**",
+      "nT": "não tem nenhum link adicionado!",
+      "allr": "deseja remover: **`{{tlinks}}`** links da lista?",
+      "allremoved": "removi: **`{{tlinks}}`** links da lista com sucesso!",
+      "cancel": "ação cancelada!",
+      "desligado": "não há nenhum link adicionado agora, então desliguei o sistema de **BLACK-LIST**!"
+    },
+    "info": {
+      "noffen": "não há nada na lista!",
+      "info": "informações da lista dos links adicionados a **BlackList**\n\n{{links}}\n\n**`{{tlinks}} / 30`**\n\nTodos os links que estiverem na lista será proibido de ser enviado no servidor, e o resto será permitido!\n\nCargos adicionados: {{roles}}\n\nCanais adicionados: {{canais}}"
+    },
+    "canais": {
+      "add": {
+        "noArgs": "você deve mencionar o canal que deseja adicionar!",
+        "jTa": "o canal mencionado já estava na lista!",
+        "max": "você atingiu o máximo de canais possível! **`( 15 )`**",
+        "add": "adicione o canal: {{canal}} a lista com sucesso! **`{{canais}} / 15`**"
+      },
+      "remover": {
+        "noArgs": "você deve mencionar o canal que deseja remover da lista!",
+        "nTa": "o canal mencionado não estava na lista!",
+        "removed": "removi o canal: {{canal}} com sucesso!",
+        "removeall?": "deseja remover: **`{{tcanais}}`** canais da lista?",
+        "removedall": "ok removi o canal: **`{{tcanais}}`** com sucesso!",
+        "cancel": "ação cancelada!"
+      },
+      "info": {
+        "noffen": "não há nenhum canal na lista!",
+        "info": "informações da lista dos canais adicionados a **BlackList**\n\n{{canais}}\n\n**`{{tcanais}} / 15`**\n\nTodos os canais adicionados será permitido enviar até mesmo links que estão na **BlackList**!\nPara adicionar algum canal use: **`{{prefix}}bl canais add`** e parar remover: **`{{prefix}}bl canais remove`**"
+      }
+    },
+    "cargos": {
+      "add": {
+        "noArgs": "você deve mencionar o cargo que deseja adicionar!",
+        "jTa": "este cargo já estava adicionado a lista!",
+        "max": "você chegou no limite de cargos! **`( 15 )`**",
+        "add": "adicionei o cargo: {{role}} com sucesso! **`{{roles}} / 15`**"
+      },
+      "remove": {
+        "removeall": "deseja remover: **`{{mrole}}`** cargos da lista?",
+        "noArgs": "você deve mencionar a cargo que deseja remover!",
+        "nTa": "o cargo mencionado não estava na lista!",
+        "min": "não havia nenhum cargo adicionado!",
+        "removed": "removi o cargo: {{role}} com sucesso! **`{{mrole}} / 15`**",
+        "removedall": "removi: **`{{mrole}}`** cargos da lista com sucesso!",
+        "cancel": "ação cancelada!"
+      },
+      "info": {
+        "noffen": "não há nenhum cargo adicionado!",
+        "info": "Informação da lista de cargos adicionados a **BlackList**\n\n{{roles}}\n\n**`{{mrole}} / 15`**\n\nTodos os cargos que estiverem adicionados terão permissão de divulgar até mesmo os links que estão na **BlackList**\nPara adicionar algum cargo use: **`{{prefix}}bl cargos add`** e parar remover: **`{{prefix}}bl cargos remove`**"
+      }
+    },
+    "msg": {
+      "noArgs": "insira a mensagem para continuar!",
+      "jTa": "essa mensagem já estava setada, escolha outra!",
+      "msg": "mensagem setada para:",
+      "help": "{member} menciona o membro\n{name} coloca o nome do membro"
+    },
+    "blacklist": "o sistema de **BLACKLIST** de links está desativado!",
+    "on": {
+      "ativado": "sistema de **BLACK-LIST** ativado!",
+      "jTa": "o sistema já estava ativo!",
+      "noffen": "não há nenhum link adicionado a lista, adicione e use o comando novamente! Para adicionar algum Link use: **`{{prefix}}bl add <link>`**"
+    },
+    "off": {
+      "desativado": "sistema de **BLACK-LIST** desativado!",
+      "jTa": "o sistema já estava ativo!"
+    },
+    "blackhelp": "{{prefix}}blacklist on\n{{prefix}}blacklist off\n{{prefix}}blacklist cargos\n{{prefix}}blacklist canais\n{{prefix}}blacklist links\n{{prefix}}blacklist info\n{{prefix}}blacklist help"
+  },
+  "created": {
+    "info": "data de criação do **Bot**: **`{{created}}`**"
+  },
+  "afk": {
+    "message": {
+      "membro": "O Membro:",
+      "afk": "está **AFK** no momento!",
+      "afk2": "Motivo:",
+      "off": "ok, desliguei seu **AFK**!",
+      "of?": "você mandou uma mensagem com o **AFK** ativo, gostaria de desativar?",
+      "cancel": "ok, não desliguei seu **AFK**"
+    },
+    "on": "ativei seu **AFK** com o motivo: **{{motivo}}**",
+    "afk": {
+      "noArgs": "você não setou o motivo para eu colocar no seu **AFK**, então setei o motivo **PADRÃO** ( **`AFK`** )!\n\nAssim que você mandar uma mensagem o sistema de **AFK** é desativado na hora!",
+      "ON": "ativei seu **AFK** com o motivo: **{{motivo}}**\n\nAssim que você mandar uma mensagem o sistema de **AFK** é desativado na hora!",
+      "igual": "o **MOTIVO** que você digitou está igual o **SETADO** atualmente, escolha outro!",
+      "noLength": "o **MOTIVO** do **AFK** deve conter mais de **5 Letras**!",
+      "set": "seu **AFK** foi setado com o motivo: **{{reason}}**\n\nAssim que você mandar uma mensagem o sistema de **AFK** é desativado na hora!"
+    }
+  },
+  "oldm": {
+    "pag": "Página",
+    "de": "de",
+    "esta": "Você está em:",
+    "pag1": "lugar ( Página:",
+    "title": "Lista dos membros mais Velhos do Servidor"
+  },
+  "beijar": {
+    "mention": "você deve mencionar o membro que deseja beijar!",
+    "beijou": "beijou",
+    "voltou": "retribuiu com outro beijo!",
+    "return": "Para retribuir basta reagir abaixo!",
+    "ctx": "não seja carente, e beije outra pessoa além de si mesmo!"
+  },
+  "divulgadores": {
+    "title": "Top Divulgadores do Servidor",
+    "convidou": "Convidou:",
+    "pessoas": "pessoas",
+    "total": "Total:",
+    "gerados": "Gerados:",
+    "users": "Usuário",
+    "gerado": "Gerado",
+    "recrutado": "Recrutado",
+    "convite": "Convite",
+    "noInvite": "não existe nenhum convite gerado no momento!",
+    "noUse": "não existe nenhum convite com mais de `0` usos!"
+  },
+  "bigemoji": {
+    "find": "você deve digitar o nome do emoji que deseja ver!",
+    "noFind": "não achei esse emoji!",
+    "ok": "aqui está seu emoji em tamanho família haha"
+  },
+  "guilds": {
+    "pag": "Página",
+    "de": "de",
+    "title": "Lista dos servidores do Bot em ordem decrescente",
+    "membros": "membros"
+  },
+  "modlog": {
+    "canal": {
+      "mention": "você deve mencionar qual canal deseja setar o sistema de **LOGS**!",
+      "igual": "o canal que você inseriu é o mesmo setado atualmente, não foi possível alterar!",
+      "set": "canal de **LOGS** setado com sucesso para o canal <#{{CHANNEL}}>"
+    },
+    "on": {
+      "jTa": "o sistema de **LOGS** já estava ativo, não foi possível ativar novamente!",
+      "on": "sistema de **LOGS** ativado!\n\nPara saber quais sistemas estão **ativos/desativados** use: **`{{prefix}}modlog list`**"
+    },
+    "off": {
+      "jTa": "o sistema de **LOGS** já estava desativado, não foi possível desativar novamente!",
+      "off": "sistema de **LOGS** desativado no servidor!"
+    },
+    "ativar": {
+      "all": "todos os sistema de **LOGS** foram ativados!",
+      "msgdelete": "sistema de **LOG** **MSGD-ELETE** ativado!",
+      "msgupdate": "sistema de **LOG** **MSG-UPDATE** ativado!",
+      "avatarupdate": "sistema de **LOG** **AVATAR-UPDATE** ativado!",
+      "nickupdate": "sistema de **LOG** **NICK-UPDATE** ativado!",
+      "usernameupdate": "sistema de **LOG** **USERNAME-UPDATE ** ativado!",
+      "rolecreate": "sistema de **LOG** **ROLE-CREATE** ativado!",
+      "roleupdate": "sistema de **LOG** **ROLE-UPDATE** ativado!",
+      "voiceupdate": "sistema de **LOG** **VOICE-UPDATE** ativado!",
+      "channelcreate": "sistema de **LOG** **CHANNELCREATE** ativado!",
+      "channelupdate": "sistema de **LOG** **CHANNEL-UPDATE** ativado!",
+      "roleadd": "sistema de **LOG** **ROLE-ADD** ativado!",
+      "roleremove": "sistema de **LOG** **ROLE-REMOVE** ativado!",
+      "topicupdate": "sistema de **LOG** **TOPIC-UPDATE** ativado!",
+      "noFound": "sistema não encontrado!",
+      "noArgs": "você deve digitar qual sistema deseja ativar, os sistemas atuais são: {{sistemas}}"
+    },
+    "desativar": {
+      "all": "todos os módulos foram desativados!",
+      "msgdelete": "sistema de **LOG** **MSG-DELETE** desativado!",
+      "msgupdate": "sistema de **LOG** **MSG-UPDATE** desativado!",
+      "avatarupdate": "sistema de **LOG** **AVATARUPDATE** desativado!",
+      "nickupdate": "sistema de **LOG** **NICK-UPDATE** desativado!",
+      "usernameupdate": "sistema de **LOG** **USERNAME-UPDATE** desativado!",
+      "rolecreate": "sistema de **LOG** **ROLE-CREATE** desativado!",
+      "roleupdate": "sistema de **LOG** **ROLE-UPDATE** desativado!",
+      "voiceupdate": "sistema de **LOG** **VOICE-UPDATE** desativado!",
+      "channelcreate": "sistema de **LOG** **CHANNEL-CREATE** desativado!",
+      "channelupdate": "sistema de **LOG** **CHANNEL-UPDATE** desativado!",
+      "roleadd": "sistema de **LOG** **ROLE-ADD** desativado!",
+      "roleremove": "sistema de **LOG** **ROLE-REMOVE** desativado!",
+      "topicupdate": "sistema de **LOG** **TOPIC-UPDATE** desativado!",
+      "noFound": "sistema não encontrado!",
+      "noArgs": "você deve digitar qual sistema deseja ativar, os sistemas atuais são: {{sistemas}}"
+    },
+    "list": "lista dos sistemas disponíveis de **LOG** do bot:\n\n{{sistema}}",
+    "status": "Status: {{logs}}",
+    "description": "{{prefix}}modlog on\n{{prefix}}modlog off\n{{prefix}}modlog list\n{{prefix}}modlog set\n{{prefix}}modlog ativar\n{{prefix}}modlog desativar",
+    "ativados": "Sistemas ativos: {{ativados}}",
+    "canall": "Canal setado: {{canal}}"
+  },
+  "input": {
+    "noArgs": "sua posição de entrada no servidor é dê",
+    "membro": "a posição de entrada do membro **`{{membro1}}`** é dê",
+    "lugar": "lugar dê um total dê `{{total}}` membros!"
+  },
+  "zcoins": {
+    "top": {
+      "title": "Ranking Global - Coins",
+      "footer": "Você está em {{seuIndex}}º lugar no Ranking Global"
+    },
+    "pay": {
+      "mention": "mencione o membro que deseja enviar **zCoins**.",
+      "noArgs": "insira quantos **zCoins** você deseja enviar.",
+      "number": "você só pode inserir números para enviar em **zCoins**.",
+      "noCoin": "você não possui **{{coins}} zCoins**, no momento você possuí **{{atual}} zCoins**.\n\n> Lembrando que só transfiro **zCoins** do **Banco**.",
+      "pay?": "você deseja enviar **{{coins}} zCoins** para o membro <@{{membro}}>? Seu saldo atual é de **{{atual}} zCoins**, após enviar você irá ficar com **{{resto}} zCoins**.",
+      "pay": "você enviou **{{coins}} zCoins** ao membro <@{{membro}}> com sucesso!\n\nAgora você possuí **{{resto}} zCoins** em sua conta.",
+      "cancel": "você cancelou o envio dos **zCoins**.",
+      "0": "você não pode enviar **0 zCoins** para alguém.",
+      "you": "você não pode enviar **zCoins** para si mesmo."
+    },
+    "embed": {
+      "coins": {
+        "user": "Você possui **{{coins}} zCoins** fora do banco no momento.",
+        "member": "O usuário possui **{{coins}} zCoins** no momento."
+      },
+      "bank": {
+        "user": "Você possui **{{bank}} zCoins** no seu banco.",
+        "member": "O usuário possui **{{bank}} zCoins** no banco."
+      }
+    }
+  },
+  "daily": {
+    "wait": "você deve aguardar **{{tempo}}** até poder pegar sua recompensa diária novamente.",
+    "vip": "você ganhou **{{coins}} zCoins**, **{{xp}} de XP** na sua empresa e mais **{{vip}} zCoins** por possuir **VIP**.\n\nAgora você tem **{{vipc}} zCoins**.",
+    "have": "você ganhou **{{coins}} zCoins** e **{{xp}} de XP** na sua empresa hoje.\n\nAgora você tem **{{atual}} zCoins**."
+  },
+  "weekly": {
+    "wait": "você deve aguardar **{{tempo}}** até poder pegar sua recompensa semanal novamente.",
+    "vip": "você ganhou **{{coins}} zCoins**, **{{xp}} de XP** na sua empresa e mais **{{vip}} zCoins** por possuir **VIP**.\n\nAgora você tem **{{vipc}} zCoins**.",
+    "have": "você ganhou **{{coins}} zCoins** e **{{xp}} de XP** na sua empresa hoje.\n\nAgora você tem **{{atual}} zCoins**."
+  },
+  "monthly": {
+    "wait": "você deve aguardar **{{tempo}}** até poder pegar sua recompensa mensal novamente.",
+    "vip": "você ganhou **{{coins}} zCoins**, **{{xp}} de XP** na sua empresa e mais **{{vip}} zCoins** por possuir **VIP**.\n\nAgora você tem **{{vipc}} zCoins**.",
+    "have": "você ganhou **{{coins}} zCoins** e **{{xp}} de XP** na sua empresa hoje.\n\nAgora você tem **{{atual}} zCoins**."
+  },
+
+  "casamento": {
+    "casado": "você já está casado(a) com o(a) **`{{par}}`**",
+    "mention": "você deve mencionar com quem deseja casar.",
+    "mcasado": "o(a) **<@{{USER}}>** já está casado com o(a) **`{{par1}}`**.",
+    "casar?": "deseja se casar com o(a)",
+    "casou": "você acabou de se casar com o(a) <@{{USER}}>.",
+    "recused": "o(a) <@{{USER}}> recusou seu pedido de casamento. 😞",
+    "noCoins": "você precisa de **250 zCoins** para poder casar.",
+    "mCoins": "o(a) <@{{USER}}> deve possuir **250 zCoins** para poder casar.",
+    "you": "você não pode casar com si mesmo. ( CARENTE )"
+  },
+  "casado": {
+    "noC": "você não está casado com ninguém.",
+    "tempo": "Tempo Casado:",
+    "par": "Par:",
+    "info": "informações sobre seu casamento.",
+    "info2": "informações sobre o casamento do membro **`{{member}}`**.",
+    "noC1": "o membro **`{{member}}`** não está casado com ninguém."
+  },
+  "divorcio": {
+    "noCasado": "você não está casado com ninguém.",
+    "deseja?": "deseja se divorciar do(a) **`{{membro}}`**?",
+    "ok": "agora você não está mais casado. 😞",
+    "cancel": "divórcio cancelado.",
+    "dm": "o seu par **`{{par}}`** acabou de se divórciar de você, é uma pena.\n\nEspero que esses **{{time}}** que você passou casado tenham feito bem para você. *:(*"
+  },
+  "avatars": "você não possui nenhum **AVATAR** salvo em minha **DataBase ( Banco de Dados ) **.",
+  "addemoji": {
+    "ok": "emoji de nome **`{{emojiName}}`** foi adicionado com sucesso.",
+    "name": "você deve inserir o nome que deseja colocar no **EMOJI**.",
+    "val": "o **EMOJI** que você enviou não é **VÁLIDO**.",
+    "limite": "o servidor já alcançou **50 EMOJIS ( LIMITE )** de **EMOJIS**.",
+    "kb": "você deve enviar uma **IMAGEM** com no máximo **256Kbps** para virar um **EMOJI**.",
+    "error": "ocorreu um **ERRO** ao adicionar o **EMOJI**."
+  },
+  "reverse": "insira o que você deseja inverter.",
+  "mcbody": {
+    "nick": "você deve inserir o nick que deseja pegar a skin."
+  },
+  "docs": {
+    "noArgs": "insira o que você deseja pesquisar nas **DOCS** do Discord.JS.",
+    "error": "não consegui encontrar nada relacionado ao que você inseriu."
+  },
+  "laranjo": {
+    "noArgs": "você deve digitar algo para fazer o meme."
+  },
+  "pp": {
+    "wait": "carregando a imagem...",
+    "limit": "o limite de caracteres é 50.",
+    "error": "ocorreu um erro ao fazer sua imagem, tente novamente!",
+    "noArgs": "você deve digitar algo para fazer o meme."
+  },
+  "spot": {
+    "name": "Nome da Música:",
+    "album": "Albúm:",
+    "author": "Author:",
+    "listening": "Ouça também:",
+    "here": "Clique Aqui",
+    "member": "o membro",
+    "noListening": "não está ouvindo **Spotify** no momento ou está com status personalizado."
+  },
+  "baby": {
+    "noArgs": "você deve digitar algo para fazer o meme."
+  },
+  "violence": {
+    "noArgs": "você deve digitar algo para fazer o meme."
+  },
+  "meme": {
+    "noText": "você deve digitar algo primeiro, tente novamente."
+  },
+  "sobremim": {
+    "noArgs": "você deve escrever algo para eu setar no **Sobre** do seu perfil.",
+    "igual": "a mensagem que você inseriu é a mesma setada atualmente, tenta novamente.",
+    "big": "o máximo de caracteres é 195 para setar no **Sobre** do seu perfil.",
+    "changed": "sua mensagem de **Sobre** do seu perfil foi alterado com sucesso para:"
+  },
+  "perfil": {
+    "lugar": "lugar",
+    "member2": "perfil do membro **`{{member}}`**.",
+    "member": "seu perfil.",
+    "married": "Casado Com",
+    "sobremim": "Sobre Mim"
+  },
+  "background": {
+    "shop": {
+      "list": "escolha um **BACKGROUND** de acordo com o ID do mesmo. Cada ID fica na parte superior do **BACKGROUND**\n> Lembrando: Cada **BACKGROUND** custa **5000 ( 5K ) zCoins**, caso queira ver quais você já possuí, use: **`{{prefix}}background list`**\n\n> Essa mensagem será apagada em **30 segundos** caso você não escolha nenhum, para evitar **FLOOD** desnecessário no chat do seu sevidor.\n\n> Para comprar algum **BACKGROUND** basta **DIGITAR** o número do mesmo no chat.\n\n> **BACKGROUNDS** que você possui atualmente:",
+      "have": "você já possuí esse **BACKGROUND**, use **`{{prefix}}background list`** para conferir todos que você já possuí.",
+      "noMoney": "você não possuí **zCoins** o suficiente para comprar esse **BACKGROUND**.",
+      "buy": "você comprou com sucesso o **BACKGROUND** de ID:"
+    },
+    "list": {
+      "have": "ID's dos **BACKGROUNDS** que você possui.",
+      "set": "O **BACKGROUND** que você está usando no momento é o de **`ID`**:",
+      "set1": "para alterar ele, use **`{{prefix}}background set <ID>`**.\n\n> Essa mensagem será apagada em **30 segundos** para evitar **FLOOD** desnecessário no chat do seu sevidor."
+    },
+    "set": {
+      "noHave": "você não possui esse **BACKGROUND**, use **`{{prefix}}background list`** para ver quais você possui.",
+      "set": "você ativou o **BACKGROUND** de **`ID`**:",
+      "set1": "com sucesso."
+    }
+  },
+  "perms": "Lista de permissões do usuário",
+  "servericon": {
+    "download": "para baixar a imagem.",
+    "click": "Clique",
+    "here": "aqui"
+  },
+  "nameBIG": "o máximo de caracteres é **10**, tente novamente.",
+  "anime": {
+    "title": "Resultado para a pesquisa **{{name}}**",
+    "rank": "Rank",
+    "popu": "Popularidade",
+    "eps": "Episodios",
+    "type": "Tipo",
+    "status": "Status",
+    "finish": "Finalizado",
+    "origem": "Origem",
+    "data": "Estreou",
+    "duration": "Duração por EP",
+    "genres": "Gêneros",
+    "trailer": "Trailer",
+    "here": "Clique Aqui",
+    "avaliation": "Avaliação",
+    "prodution": "Em produção"
+  },
+  "ping": {
+    "bot": "Ping do Bot:",
+    "shard": "Shard:",
+    "shardping": "Ping da Shard:"
+  },
+  "svstats": {
+    "user": "Total de Usuários:",
+    "bots": "Bots:",
+    "members": "Membros:",
+    "category": "📓 Status Servidor 📓"
+  },
+  "banlist": {
+    "mPerm": "você não tem permissão de ver os banimentos do servidor.",
+    "bPerm": "eu não tenho permissão de ver os banimentos do servidor.",
+    "noBan": "o servidor não possuí nenhum banimento.",
+    "list": "lista das pessoas que estão banidas no servidor."
+  },
+  "ascii": {
+    "big": "máximo de caracteres permitidos é 15.",
+    "error": "ocorreu um **ERRO** ao fazer o ascii.",
+    "invalid": "contéudo inválido."
+  },
+  "github": {
+    "empresa": "Empresa",
+    "localization": "Localização",
+    "created": "Criado em",
+    "att": "Atualizado em",
+    "bio": "Biografia",
+    "perfil": "Perfil de",
+    "nome": "Nome",
+    "repo": "Repositórios Públicos",
+    "seguidores": "Seguidores",
+    "seguindo": "Seguindo",
+    "error": "perfil não encontrado na GitHub."
+  },
+  "render": {
+    "carregando": "carregando a página...",
+    "url": "verificando se a **URL** é válida...",
+    "nsfw": "só posso usar este comando em canais **NSFW**.",
+    "ok": "render deletada.",
+    "result": "Resultado",
+    "error": "o site desejado não existe ou não respondeu em **5 segundos**.",
+    "noArgs": "você deve digitar uma **URL** primeiro."
+  },
+  "zvip": {
+    "noHave": "você não possui **VIP** em meu sistema, para comprar use **`{{prefix}}shop`**.",
+    "info": "informações do seu **VIP**.",
+    "info2": "informações do **VIP** do membro **`{{user}}`**.",
+    "mnoHave": "o membro **`{{user}}`** não possuí **VIP** no meu sistema.",
+    "active": "VIP Ativado",
+    "noActive": "VIP Desativado",
+    "term": "Término:",
+    "status": "Status do seu Vip"
+  },
+  "coinbet": {
+    "win": "deu **Coroa** e você ganhou do usuário",
+    "win2": "seu prêmio é de",
+    "loser": "deu **Cara** e você perdeu do usuário",
+    "loser2": "o prêmio dele é de",
+    "aposta": "o membro <@{{author}}> te desafiou para um **CARA** ou **COROA** valendo **{{apost}} zCoins**, deseja participar? Você irá gastar **{{apost2}} zCoins** e caso ganhe receberá **{{apost}} zCoins**.",
+    "recused": "o membro <@{{usr}}> recusou seu pedido de **CARA** ou **COROA**.",
+    "mention": "você deve mencionar quem deseja desafiar no **CARA** ou **COROA**.",
+    "valor": "insira o valor da aposta.",
+    "noMoney": "você não possuí **zCoins** o suficiente para essa aposta.",
+    "noMMoney": "o membro **`{{userr}}`** não possuí **zCoins** o suficiente para essa aposta.",
+    "0": "não é possível apostar **0 zCoins**.",
+    "userI": "você não pode se desafiar no **CARA** ou **COROA**.",
+    "status": {
+      "total": "Total de Partidas",
+      "victory": "Vitórias",
+      "losers": "Derrotas",
+      "ganho": "Total Ganho",
+      "perdido": "Total Perdido",
+      "title": "CoinBet Status"
+    }
+  },
+  "covid": {
+    "notFound": "país **{{pais}}** não encontrado ou não existe.",
+    "country": "Pais:",
+    "mundial": "Status Mundial",
+    "total": "Casos Totais:",
+    "dTotal": "Mortes Totais:",
+    "rTotal": "Total Recuperados:",
+    "crit": "Casos Críticos:",
+    "rToday": "Recuperados Hoje:",
+    "dToday": "Mortos Hoje:"
+  },
+  "work": {
+    "name": {
+      "noArgs": "insira o nome que você deseja setar na sua empresa. ( Custa **500 zCoins** para mudar )",
+      "igual": "o nome inserido já é o mesmo setado atualmente, tente novamente.",
+      "noMoney": "você não possuí **zCoins** o suficiente, lhe falta **{{coins}} zCoins**",
+      "big": "o máximo de caracteres para nome de empresa são **50**, tente novamente.",
+      "change": "parabéns, você alterou o nome da sua empresa para **`{{name}}`** com sucesso, e claro retirei **500 zCoins** da sua conta, nada vem de graça na vida amigo. rsrs"
+    },
+    "info": {
+      "name": "Nome da sua Empresa",
+      "name1": "Nome da Empresa",
+      "noName": "Nenhum nome definido",
+      "status": "Status Level/XP",
+      "money": "Salário ( Varia de acordo com o level da empresa )",
+      "time": "Tempo até você poder trabalhar de novo",
+      "time1": "Tempo até o membro poder trabalhar de novo",
+      "title": "Status da sua Empresa",
+      "title1": "Empresa do Membro {{member}}",
+      "work": "Você já pode trabalhar novamente",
+      "work1": "O membro já pode trabalhar novamente"
+    },
+    "up": {
+      "noXp": "o **XP** que você possui atualmente não é o suficiente para subir o level da sua empresa, você precisa de **{{rXP}}** de xp para upar para sua empresa para o level **{{level}}**.",
+      "uped": "você elevou o level da sua empresa para o level **{{level}}** com sucesso.",
+      "uped1": "você elevou o level da sua empresa para o level **{{level}}** com sucesso.\nVocê tinha **{{xp}} xp** e o necessário para upar o level era de **{{nextLevel}}**, com isso sobrou **{{rest}} xp**, mas já setei ele no seu xp atual."
+    },
+    "top": {
+      "title": "Ranking Global - Empresa",
+      "footer": "Você está em {{seuIndex}}º lugar no Ranking Global",
+      "name": "Empresa:",
+      "owner": "Dono:",
+      "noDefined": "Nome não definido"
+    },
+    "worked": "você trabalhou com sucesso, o que você conseguiu:\n\n> **zCoins: {{money}}**\n> **XP: {{xp}}**\n\n> E parabéns, sua empresa acaba de subir para o level **{{uped}}**, agora você vai conseguir mais **zCoins** ao trabalhar.\n> Para saber as informações da sua empresa use **`{{prefix}}work info`**",
+    "worked1": "você trabalhou com sucesso, o que você conseguiu:\n\n> **zCoins: {{money}}**\n> **XP: {{xp}}**\n> Para saber as informações da sua empresa use **`{{prefix}}work info`**",
+    "wait": "você deve aguardar",
+    "wait1": "até poder trabalhar novamente.",
+    "help": "para saber informações de sua empresa/de algum membro use **`{{prefix}}work info <USER>`**\n> para trocar o nome da sua empresa use **`{{prefix}}work name <NAME>`** ( custa **500 zCoins** )\n> caso você já tenha xp o suficiente para upar o level da empresa mas está em cooldown o comando de trabalhar use **`{{prefix}}work up`**\n> para trabalhar basta usar **`{{prefix}}work`**",
+    "footer": "Use {{prefix}}work help para saber mais.",
+    "noDay": "você não pode trabalhar aos sábados e aos domingos.",
+    "noDayCd": "Você não pode trabalhar aos fins de semana."
+  },
+  "rep": {
+    "info": "{{prefix}}rep <USER> - Dá uma reputação\n{{prefix}}reps - Vê suas informações de reputação",
+    "wait": "você deve aguardar {{time}} para enviar uma reputação novamente.",
+    "info1": "Como usar o comando **REPUTAÇÃO**.",
+    "time": "você deve aguardar {{time}} para poder enviar uma reputação novamente.",
+    "mention": "você deve mencionar quem deseja enviar uma reputação.",
+    "author": "você não pode enviar reputação pra sí mesmo.",
+    "send?": "deseja realmente mandar uma reputação para o membro",
+    "send": "você enviou uma reputação para o usuário **`{{user}}`** com sucesso. Agora ele possuí **{{reps}}** de reputação.",
+    "cancel": "cancelei a ação com sucesso!",
+    "reps": {
+      "status": "Status de Reputação",
+      "value1": "Total de {{send}}",
+      "lastSend": "Pra quem você enviou reputação pela última vez?",
+      "lastGive": "Quem te enviou reputação pela última vez?",
+      "ranking": "Posição que você está no ranking global de Reputação",
+      "received": "reputação recebida",
+      "receiveds": "reputações recebidas",
+      "send": "reputação enviada.",
+      "sends": "reputações enviadas.",
+      "noSend": "Você ainda não enviou reputação para ninguém.",
+      "noGive": "Você ainda não recebeu nenhuma reputação.",
+      "noRank": "Você ainda não está no ranking.",
+      "lugar": "lugar",
+      "noffen": "Nenhuma enviada",
+      "noffen1": "Nenhuma recebida"
+    },
+    "footer": {
+      "ok": "Você já pode enviar uma reputação novamente.",
+      "no": "Falta {{time}} até você poder enviar uma reputação novamente."
+    },
+    "description": "Para enviar uma reputação para alguém basta usar o comando **`{{prefix}}rep <USER>`**."
+  },
+  "cd": {
+    "daily": {
+      "ok": "Já pode resgatar o **daily** novamente.",
+      "title": "Tempo para o **Daily**"
+    },
+    "weekly": {
+      "ok": "Já pode resgatar o **weekly** novamente.",
+      "title": "Tempo para o **Weekly**"
+    },
+    "monthly": {
+      "ok": "Já pode resgatar o **monthly** novamente.",
+      "title": "Tempo para o **Monthly**"
+    },
+    "work": {
+      "ok": "Já pode **trabalhar** novamente.",
+      "title": "Tempo até poder **trabalhar** novamente"
+    },
+    "farm": {
+      "title": "Tempo acumulado de ganhos na Fazenda"
+    },
+    "steal": {
+      "ok": "Já pode **roubar** novamente.",
+      "title": "Tempo até poder **roubar** um usuário novamente."
+    },
+    "protection": {
+      "title": "Tempo de **proteção** contra **roubos**."
+    },
+    "rep": {
+      "ok": "Já pode enviar uma **reputação** novamente.",
+      "title": "Tempo até poder enviar uma **reputação** novamente."
+    },
+    "description": "aqui estão as informações dos status de cooldown de todos os meus comandos, neste comando eu informo quanto tempo falta para você/o usuário poder usar o comando novamente, ou se já pode usar.\n\nNo momento você está vendo",
+    "desc": "**suas informações**",
+    "desc2": "as informações do usuário **`{{user}}`**.",
+    "bot": "não seja bobo, Bots não pegam recompensas e nem enviam reputação. rsrs"
+  },
+  "xp": {
+    "user": "Seu Level/XP",
+    "member": "Level do Usuário/XP",
+    "nextLevel": "Próximo level",
+    "desc": "Irá upar para o level **{{level}}** e ainda falta **{{restXP}} xp** para upar.",
+    "top": {
+      "title": "Ranking Global - XP",
+      "footer": "Você está em {{seuIndex}}º lugar no Ranking Global"
+    }
+  },
+  "backup": {
+    "noPermMe": "eu preciso da permissão **ADMINISTRATOR** para poder usar este comando.",
+    "desc": "{{prefix}}backup create - Cria um Backup do Servidor\n{{prefix}}backup load <ID> - Carrega um Backup no Servidor\n{{prefix}}backup info <ID> - Mostra informações de um Backup",
+    "noPerm": "você precisa da permissão **ADMINISTRATOR** para criar um backup.",
+    "sucess": {
+      "title": "Backup criado com Sucesso",
+      "creating": "um momento, estou criado seu Backup.",
+      "id": "ID do seu Backup **`{{id}}`**\nAnote este **ID**, caso contrário você irá perder ele, o Bot não salva essas informações.",
+      "load": "Para carregar seu Backup em um servidor use **{{load}}**.",
+      "load?": "Como carrego meu Backup em um servidor?",
+      "noTime": "o tempo para resposta terminou.",
+      "loading": "Irei começar o Backup",
+      "error": "ocorreu um erro ao carregar o Backup, verifique se estou com permissão de Administrador.",
+      "noID": "não encontrei nenhum Backup com o ID:"
+    },
+    "load": {
+      "noPerm": "você precisa da permissão **ADMINISTRATOR** para carregar um backup.",
+      "noID": "eu preciso do **ID** do Backup.",
+      "load?": "quando eu começar o Backup tudo nesse servidor será deletado, **cargos, canais, mensagens, etc...**, caso queira fazer realmente fazer o **Backup** digite **`confirmar`**.",
+      "loading": "Começando a carregar o Backup"
+    },
+    "info": {
+      "title": "Informações do Backup",
+      "serverID": "ID do Servidor",
+      "backupID": "ID do Backup",
+      "size": "Tamanho do Backup",
+      "created": "Backup criado em"
+    },
+    "noArgs": "Informações comando Backup",
+    "noFind": "não encontrei nenhum Backup com o ID"
+  },
+  "fazenda": {
+    "info": {
+      "title": {
+        "author": "Informações da sua Fazenda",
+        "member": "Informações da fazendo do usuário"
+      },
+      "cow": {
+        "name": "Vaca",
+        "price": "Renda por Vaca:"
+      },
+      "chicken": {
+        "name": "Galinha",
+        "price": "Renda por Galinha:"
+      },
+      "pig": {
+        "name": "Porco",
+        "price": "Renda por Porco:"
+      },
+      "duck": {
+        "name": "Pato",
+        "price": "Renda por Pato:"
+      },
+      "sheep": {
+        "name": "Ovelha",
+        "price": "Renda por Ovelha:"
+      },
+      "deer": {
+        "name": "Veado",
+        "price": "Renda por Veado:"
+      },
+      "toucan": {
+        "name": "Tucano",
+        "price": "Renda por Tucano:"
+      },
+      "horse": {
+        "name": "Cavalo",
+        "price": "Renda por Cavalo:"
+      },
+      "fox": {
+        "name": "Raposa",
+        "price": "Renda por Raposa:"
+      },
+      "alface": {
+        "name": "Alface",
+        "price": "Renda por Semente:"
+      },
+      "batata": {
+        "name": "Batata",
+        "price": "Renda por Semente:"
+      },
+      "tomate": {
+        "name": "Tomate",
+        "price": "Renda por Semente:"
+      },
+      "maca": {
+        "name": "Maçã",
+        "price": "Renda por Pé:"
+      },
+      "laranja": {
+        "name": "Laranja",
+        "price": "Renda por Pé:"
+      },
+      "mexerica": {
+        "name": "Mexerica",
+        "price": "Renda por Pé:"
+      },
+      "info": {
+        "animais": "**{{fazenda}}Animais:**",
+        "animaisDesc": "{{cowE}} Vaca: **{{cowSize}}**\n{{chickenE}} Galinha: **{{chickenSize}}**\n{{pigE}} Porco: **{{pigSize}}**\n{{duckE}} Pato: **{{duckSize}}**\n{{sheepE}} Ovelha: **{{sheepSize}}**\n{{deerE}} Veado: **{{deerSize}}**\n{{toucanE}} Tucano: **{{toucanSize}}**\n{{horseE}} Cavalo: **{{horseSize}}**\n{{foxE}} Raposa: **{{foxSize}}**",
+        "plantas": "**{{plantas}}Plantas:**",
+        "plantasDesc": "{{alfaceE}} Alface: **{{alfaceSize}}**\n{{batataE}} Batata: **{{batataSize}}**\n{{tomateE}} Tomate: **{{tomateSize}}**",
+        "arvores": "**{{arvores}}Árvores:**",
+        "arvoresDesc": "{{macaE}} Maçã: **{{macaSize}}**\n{{laranjaE}} Laranja: **{{laranjaSize}}**\n{{mexericaE}} Mexerica: **{{mexericaSize}}**",
+        "daily": "Rendimento Diário"
+      },
+      "title2": "Informações de Capacidade/Ganho Diário",
+      "day": "Rendimento Diário:",
+      "quantidade": "Quantidade:",
+      "buy": "Preço de Compra:",
+      "name": {
+        "author": "Nome da sua Fazenda",
+        "member": "Nome da Fazenda do usuário",
+        "noDefined": "Nome não definido"
+      },
+      "level": {
+        "author": "Level/XP da sua Fazenda",
+        "member": "Level/XP da Fazenda do usuário"
+      },
+      "vip": "mais **{{vip}}** zCoins por possuir **VIP**.\n**{{xp}}** e mais **{{xpVIP}}** XP por possuir **VIP**.",
+      "data": "Tempo de ganhos acumulados",
+      "more": "{{fazenda}} Para saber mais sobre os comandos de Fazenda use **{{prefix}}farm help**",
+      "total": "Ganhos acumulados",
+      "boost": "Lucros multiplicados em **1.5x** por possuir um **Boost** ativado."
+    },
+    "top": {
+      "title": "Ranking Global - Fazenda",
+      "footer": "Você está em {{seuIndex}}º lugar no Ranking Global",
+      "name": "Fazenda:",
+      "owner": "Dono:"
+    },
+    "recall": {
+      "noHave": "você não possui nada para recolher, use o comando **`{{prefix}}fazenda`** para saber informações da sua fazenda.",
+      "noAnimal": "você não possui animais em sua fazenda, portanto não é possível recolher nada.",
+      "vip": "você recolheu os itens da sua fazenda com sucesso.\n> **{{xp}} xp** mais **{{xpVIP}} xp** por possuir **VIP**.\n> **{{give}} zCoins** mais **{{vip}} zCoins** por possuir **VIP**.\n> Tempo de ganhos acumulados **{{time}}**",
+      "member": "você recolheu os itens da sua fazenda com sucesso.\n> **{{xp}} xp**.\n> **{{give}} zCoins**.\n> Tempo de ganhos acumulados **{{time}}**",
+      "up_level": "sua fazenda upou para o level **{{level}}** parabéns.",
+      "noDay": "não é possível recolher ganhos durante os fins de semana."
+    },
+    "name": {
+      "noArgs": "você deve inserir qual nome deseja setar na sua Fazenda.",
+      "jTa": "o nome inserido é o mesmo setado atualmente, tente novamente.",
+      "big": "o nome inserido contém mais de **50 caracteres**, tente novamente.",
+      "changed": "nome da sua Fazenda alterada para **`{{name}}`** com sucesso."
+    },
+    "by": {
+      "noArgs": "modo de usar o comando: **{{prefix}}farm buy <animal> <quantidade>**.\n\n> Lembrando só é possível comprar animais com o dinheiro do **Banco**, para depositar dinheiro use **{{prefix}}deposit <quantia>**.",
+      "noFind": "modo correto de usar o comando: **{{prefix}}farm buy <animal/planta/árvore> <quantidade>**\n\n> {{animais}} **Animais:**\n> vaca, galinha, porco, pato, ovelha, veado, tucano, cavalo, raposa\n> {{plantas}} **Plantas:**\n> alface, batata, tomate\n> {{arvores}} **Árvores:**\n> maça, laranja, mexerica",
+      "noNumber": "modo correto de usar o comando: **`{{prefix}}farm buy <animal/planta/arvore> <quantidade>`**",
+      "noMoney": "você não possui **zCoins** o suficiente no seu **Banco** para comprar este animal/planta/árvore, lhe falta **{{rest}} zCoins**.\nPara depositar **zCoins** no **Banco** use **{{prefix}}deposit <quantia/all>**.",
+      "full": "o limite desse item em sua fazenda é de **{{one}}**, e você já possui **{{two}}**.",
+      "fullVip": "o limite desse item em sua fazenda é de **{{one}}**, e você já possui **{{two}}**.",
+      "sucess": "você comprou **{{info}}** com sucesso.",
+      "all": {
+        "full": "não é possível comprar mais nada pois o slot deste animal/planta/árvore está cheio.",
+        "noMoney": "você não tem **zCoins** o suficiente para encher o slot, você precisa de mais **{{zCoins}} zCoins**.",
+        "bought": "você comprou **{{info}}** com sucesso."
+      }
+    },
+    "booster": {
+      "have": "você já possui um **Booster** ativado na sua **Fazenda**, não é possível comprar mais.",
+      "noMoney": "você precisa de mais **{{coins}} zCoins** para comprar um Booster pra sua **Fazenda**.",
+      "buy": "você comprou **2 dias** de **Booster** com sucesso, nesse tempo sua **Fazenda** irá gerar **1.5x** à mais de **zCoins**, mas lembre-se se você não recolher antes do tempo acabar irá perder o lucro do **Booster**."
+    },
+    "help": "{{prefix}}fazenda <USER> - Vê as informações da sua fazenda/do user\n\n{{prefix}}fazenda recall - Recolhe os itens/xp da fazenda\n\n{{prefix}}fazenda name <NAME> - Renomeia o nome da sua fazenda\n\n{{prefix}}fazenda buy - Mostra o painel para comprar coisas para sua Fazenda.",
+    "title": "Painel de Ajuda | Fazenda",
+    "noffen": "essa fazenda não possui nenhum animal, portanto não é possível ver suas informações.\nUse **`{{prefix}}fazenda buy <vaca, galinha, porco, pato, ovelha, raposa> <quantidade>`** parar comprar animais.",
+    "noDay": "Não é possível recolher ganhos durante os fins de semana.",
+    "novamente": "use o comando novamente."
+  },
+  "resetar": {
+    "reset?": "deseja deletar a guild do meu banco de dados?\nTodas as configurações serão perdidas, **`autorole, welcome, byebye, contador, etc...`**",
+    "cancel": "ok, cancelei a ação.",
+    "loading": "deletando os arquivos, um momento...",
+    "reseted": "resetei a guild com sucesso no meu banco de dados."
+  },
+  "cmd": {
+    "on": {
+      "added": "este comando já está ativado.",
+      "add": "comando **`{{command}}`** adicionado à lista com sucesso.",
+      "OffAndOn": "este comando estava adicionado a lista de comandos bloqueados, retirei ele de lá e setei como liberado."
+    },
+    "off": {
+      "added": "este comando não está na lista de comandos liberados.",
+      "add": "comando **`{{command}}`** removido da lista com sucesso."
+    },
+    "help": {
+      "noffen": "não há nenhum comando setado na lista de bloqueados/liberados, use **`{{prefix}}cmd help`** para saber como adicionar/remover comandos.",
+      "on": "Comandos Liberados",
+      "off": "Comandos Bloqueados",
+      "chaton": "Chats Liberados",
+      "chatoff": "Chats Bloqueados",
+      "nenhum": "Nenhum",
+      "nenhum1": "Nenhuma",
+      "title": "Informações",
+      "desc": "Em todos os chats bloqueados os comandos do **Bot** não serão permitidos para ninguém, exceto quem possui permissão **ADMINISTRADOR/BAN_MEMBERS**, será permitido somente o uso dos comandos que estiverem liberados.\n\nPara liberar algum comando use **`{{prefix}}cmd on <NOME DO COMANDO>`**.\nPara remover algum comando da lista de liberados use **`{{prefix}}cmd off <NOME DO COMANDO>`**.\nPara adicionar algum canal à lista de bloqueio use **`{{prefix}}cmd chat <ID/NOME/MENÇÃO>`**.",
+      "status": "Status do Sistema",
+      "statusd": "No momento o sistema se encontra **{{info}}**",
+      "ativado": "ATIVADO.",
+      "desativado": "DESATIVADO.",
+      "OnAndOff": {
+        "ativado": "sistema ativado com sucesso.",
+        "desativado": "sistema desativado com sucesso.",
+        "desc": "{{certo}} - Ativa o Sistema\n{{errado}} - Desativa o Sistema",
+        "title": "Informações Desativar/Ativar Sistema"
+      },
+      "msg": "Mensagem Setada"
+    },
+    "chatOff": {
+      "added": "este canal já está adicionado a lista de canais bloqueados, então removi ele.",
+      "OffAndOn": "este canal já estava setado na lista de canais liberados, retirei ele de lá e setei como bolqueado.",
+      "add": "setei o canal **<#{{CHANNEL}}>** com sucesso à lista de canais bloqueados."
+    },
+    "chatOn": {
+      "added": "este canal já está adicionado a lista de canais liberados.",
+      "OffAndOn": "este canal já estava setado na lista de canais bloqueados, retirei ele de lá e setei como lierado.",
+      "add": "setei o canal **<#{{CHANNEL}}>** com sucesso à lista de canais liberados."
+    },
+    "msg": {
+      "noArgs": "você deve inserir qual mensagem deseja setar.\n\n> Para mencionar o membro na mensagem use basta colocar **{member}** e para inserir o nome dele use **{name}**.",
+      "igual": "a mensagem inserida é igual a antiga, tente novamente.",
+      "set": "> mensagem alterada para **{{msg}}**"
+    },
+    "notFound": "não tenho nenhum comando com esse nome."
+  },
+  "news": {
+    "title": "Notícias do Bot",
+    "desc": "> Novos comandos na parte da economia:\n**z.work top** - Mostra o TOP das Empresas do Bot.\n**z.fazenda top** - Mostra o TOP das Fazendas do Bot.\n> Lucros da Fazenda diminuido.\n> Agora não é possível trabalhar e nem gerar lucros aos fins de semana."
+  },
+  "shop": {
+    "have": "você já possui **VIP ETERNO** não é possível comprar mais tempo.",
+    "noArgs": "você não inseriu o tempo de **VIP** que quer comprar, lembrando, só é possível comprar **15** ou mais dias de **VIP**.\n\n> Modo de uso: **{{prefix}}shop <dias/eterno>**\n> Preço do **VIP ETERNO**: **250,000 zCoins**, caso deseje comprar use **{{prefix}}shop eterno**.\n\n> ! Cada dia de **VIP** custa **600 zCoins**. !",
+    "min": "você só pode comprar **15** ou mais dias de **VIP**.",
+    "noCoins": "você não possui **zCoins** o suficiente para comprar **{{days}} dias** de **VIP**, ainda lhe falta **{{rest}} zCoins**.",
+    "buy": "você acaba de comprar **{{days}} dias** de **VIP** pelo preço de **{{total}} zCoins** com sucesso. **^^**",
+    "buy?": "deseja realmente comprar **{{days}} dias** de **VIP** pelo preço de **{{price}} zCoins**?",
+    "cancel": "cancelei sua compra com sucesso.",
+    "eterno": {
+      "noHave": "você não possui **zCoins** o suficiente para comprar **VIP ETERNO** ainda lhe falta **{{rest}} zCoins** para poder comprar **VIP ETERNO**..",
+      "buy?": "deseja realmente comprar **VIP ETERNO** pelo preço de **250,000 zCoins**?",
+      "buy": "você acaba de comprar **VIP ETERNO** com sucesso. **^^**"
+    }
+  },
+  "bank": {
+    "desc": "você tem **{{bank}} zCoins** na sua conta do **Banco** no momento, para depositar mais dinheiro use **`{{prefix}}deposit <quantia/tudo>`** e para retirar dinheiro use **`{{prefix}}withdraw <quantia/tudo>`**.",
+    "deposit": {
+      "noArgs": "você deve inserir quantos **zCoins** dejesa depositar no **Banco**.\n\n> Caso deseje depositar tudo de uma vez use **{{prefix}}deposit all**",
+      "noHave": "você não possui **{{deposit}} zCoins** para depositar, no momento você possui somente **{{coins}} zCoins**.",
+      "sucess": "você depositou **{{deposit}} zCoins** com sucesso, agora você possui **{{bank}} zCoins** em seu **Banco**.",
+      "all": {
+        "noMoney": "você não possui nenhum **zCoins** fora do seu **Banco** para depositar.",
+        "deposited": "você depositou todo seus **zCoins** com sucesso! ( **{{coins}} zCoins** )"
+      }
+    },
+    "withdraw": {
+      "noArgs": "você deve inserir quantos **zCoins** dejesa sacar do **Banco**.\n\n> Caso deseje sacar tudo de uma vez use **{{prefix}}withdraw all**",
+      "noHave": "você não possui **{{withdraw}} zCoins** para sacar, no momento você possui somente **{{bank}} zCoins**.",
+      "sucess": "você sacou **{{withdraw}} zCoins** com sucesso, agora você possui **{{bank}} zCoins** em seu **Banco**.",
+      "all": {
+        "noMoney": "você não possui nenhum **zCoins** dentro do seu **Banco** para sacar.",
+        "deposited": "você sacou todo seus **zCoins** com sucesso! ( **{{coins}} zCoins** )"
+      }
+    }
+  },
+  "steal": {
+    "info": {
+      "lastSteal": "Última pessoa que te roubou",
+      "lastStolen": "Última pessoa que você roubou",
+      "mlastSteal": "Última pessoa que roubou o usuário",
+      "mlastStolen": "Última pessoa que o usuário roubou",
+      "totalSteal": "Total de zCoins que foram roubados de você",
+      "totalStolen": "Total de zCoins que você roubou",
+      "mtotalSteal": "Total de zCoins que foram roubados do usuário",
+      "mtotalStolen": "Total de zCoins que o usuário roubou",
+      "noffen": "Ninguém",
+      "noffenCoins": "Nada",
+      "time": "Tempo até poder roubar novamente",
+      "steal": "Você já pode roubar novamente",
+      "mSteal": "O usuário já pode roubar novamente.",
+      "protection": "Tempo de proteção contra roubos",
+      "noProtection": "Você não está sob proteção no momento",
+      "mnoProtection": "O usuário não está sob proteção no momento."
+    },
+    "desc": "para roubar alguém use **{{prefix}}steal <user>**, para comprar tempo de proteção use **{{prefix}}steal buy <tempo>** e caso queira saber informações sobre seus roubos/de outro membro use **{{prefix}}steal info**.\n\nPara guardar seu dinheiro e evitar ser roubado use **{{prefix}}deposit <quantia>**",
+    "timeSteal": "você deve aguardar **{{time}}** até poder roubar novamente.",
+    "timeStolen": "este membro está sob proteção por **{{time}}**.",
+    "noCoins": "o usuário mencionado não tem mais de **2.000 zCoins**, portanto não é possível roubar ele.",
+    "steal": "você roubou **{{steal}} zCoins** do usuário **{{user}}** com sucesso!",
+    "noMember": "não seja bobo, não da pra roubar a si mesmo meu amigo. **^^**",
+    "memberI": "você não pode roubar o mesmo usuário **2x seguidas**.",
+    "buy": {
+      "noMoney": "você não possui **zCoins** o suficiente em seu **Banco** para comprar proteção. ( **6k zCoins** )",
+      "haveProtection": "você já está em proteção por **{{time}}**.",
+      "bought": "você comprou **2 dias** de proteção contra roubos com sucesso."
+    }
+  },
+  "crates": {
+    "desc": "Para abrir alguma caixa use **{{prefix}}crate open <id>**\nPara comprar alguma caixa use **{{prefix}}crate buy <id>**",
+    "title": "Caixas",
+    "info": {
+      "normal": {
+        "title": "Caixa Normal `(ID: 1)`",
+        "size": "Quantidade: **{{normalSize}}** caixas"
+      },
+      "epic": {
+        "title": "Caixa Épica `(ID: 2)`",
+        "size": "Quantidade: **{{epicSize}}** caixas"
+      },
+      "legendary": {
+        "title": "Caixa Legendária `(ID: 3)`",
+        "size": "Quantidade: **{{legendarySize}}** caixas"
+      }
+    },
+    "open": {
+      "normal": {
+        "1": "5k zCoins",
+        "2": "1 Dia Vip",
+        "3": "10 Vacas - 10 Porcos",
+        "4": "1k zCoins",
+        "5": "Nada"
+      },
+      "epic": {
+        "1": "Nada",
+        "2": "5 Dias Vip",
+        "3": "10 Tucanos - 10 Ovelhas",
+        "4": "10k zCoins",
+        "5": "5k zCoins"
+      },
+      "legendary": {
+        "1": "40k zCoins",
+        "2": "10 Raposas - 10 Cavalos",
+        "3": "50k zCoins",
+        "4": "20k zCoins",
+        "5": "15 Dias Vip"
+      },
+
+      "desc": "você abriu **{{caixas}}** e conseguiu o seguinte prêmio:",
+      "openNormal": "{{size}} caixas Normais",
+      "openEpic": "{{size}} caixas Épicas",
+      "openLegendary": "{{size}} caixas Legendárias",
+      "notFound": "o ID inserido não corresponde a nenhuma caixa, lista das caixas e seus ID's:\n\n> **ID 1: Caixa Normal**\n> **ID 2: Caixa Épica**\n> **ID 3: Caixa Legendária**",
+      "noHave": "você não possui essa caixa, digite **{{prefix}}crates** para saber quais caixas você possui.",
+      "many": "a quantidade de caixas inseridas para abrir é maior do que você possui, use **{{prefix}}crates** para saber mais informações sobre suas caixas."
+    },
+    "buy": {
+      "box": "caixa",
+      "sucess": "você comprou **{{size}}** com sucesso.",
+      "normal": "normal",
+      "epic": "épica",
+      "legendary": "legendária",
+      "noMoney": "você não possui **zCoins** o suficiente para completar a compra, lhe falta **{{rest}} zCoins**.",
+      "notFound": "o ID inserido não corresponde a nenhuma caixa, lista das caixas e seus ID's:\n\n> **ID 1: Caixa Normal**\n> **ID 2: Caixa Épica**\n> **ID 3: Caixa Legendária**"
+    }
+  },
+  "tickets": {
+    "help": {
+      "title": "Tickets",
+      "desc": "No momento você possui **{{tickets}} zTickets**",
+      "info": "Mais informações",
+      "infoDesc": "Para comprar **zTickets** use **{{prefix}}ticket buy  <quantidade>** ( **3k zCoins** )\nPara abrir **zTickets** use **{{prefix}}ticket open**",
+      "rewards": "Possíveis Prêmios",
+      "rewardsDesc": "1 Caixa Normal\n2k zCoins\n1 Raposa\n5 Galinhas\nNada"
+    },
+    "buy": {
+      "noArgs": "uso correto do comando **{{prefix}}ticket buy <quantia>**",
+      "noMoney": "você não possui **zCoins** o suficiente para comprar **{{size}} zTickets**, você precisa de mais **{{rest}} zCoins**.\n\n> Só aceito **zCoins** do **Banco**.",
+      "sucess": "você comprou **{{size}} zTickets** com sucesso pelo preço de **{{price}} zCoins**."
+    },
+    "open": {
+      "noHave": "você não possui nenhum **zTicket** use **{{prefix}}ticket buy <quantidade>** para comprar **zTickets**.",
+      "gift": "você ganhou o seguinte prêmio no seu **zTicket**:\n\n{{ticket}}",
+      "gifts": {
+        "1": "Caixa Normal",
+        "2": "2k zCoins",
+        "3": "1 Raposas",
+        "4": "5 Galinhas",
+        "5": "Nada"
+      }
+    }
+  },
+  "votes": {
+    "info": "Quantidade de Votos",
+    "desc": "Total de **{{votos}} Votos**",
+    "premios": "Prêmios por quantidade de **Votos**",
+    "desc2": "**1 à 3 Votos:** 8k zCoins e 1 Caixa Normal\n**4 à 6 Votos**: 10k zCoins e 1 Caixa Épica\n**7 à 9 Votos**: 15k zCoins e 1 Caixa Legendária\n**10 Votos em Diante**: 20k zCoins, 2 Caixas Legendárias e 3 Dias de Vip",
+    "vote?": "Como votar no Bot?",
+    "desc3": "Para votar no Bot basta **[Clicar Aqui](https://zuraaa.com/bots/601847636546289664/)**"
+  },
+  "calc": {
+    "invalid": "equação inválida.",
+    "result": "Resultado da Conta",
+    "expression": "Expressão",
+    "impossible": "Impossível determinar",
+    "help": "modo correto de usar: **`{{prefix}}calc <expressão matemática>`***",
+    "title": "Calculadora"
+  },
+  "clear": {
+    "noArgs": "insira um número de **2** à **100** para eu limpar em mensagens.",
+    "sucess": "apaguei **{{size}}** mensagens com sucesso.",
+    "err": "Porém **{{size}}** mensagens não foram apagadas por existerem a mais de **14 dias**."
+  },
+  "m_delete": {
+    "status": "no momento o sistema de deletar as mensagens do usuários se encontra **{{status}}**.\n\n> Para ativar use **{{prefix}}mdelete on**\n> Para desativar use **{{prefix}}mdelete off**",
+    "on": {
+      "ON": "o sistema já se encontra ativo.",
+      "OK": "sistema ativado com sucesso."
+    },
+    "off": {
+      "OFF": "o sistema já se encontra desativado.",
+      "OK": "sistema desativado com sucesso."
+    }
+  },
+  "symbols": "não pode usar *, ` e _.",
+  "stoptyping": "ok, parei de digitar neste canal, use esse comando para quando meu `digitar` estiver bugado.",
+  "cooldown": "você deve esperar **5 segundos** para usar outro comando.",
+  "bot": "não pode usar esse comando em **BOTS**.",
+  "bugreport": {
+    "noArgs": "você não inseriu o que deseja reportar.",
+    "noLength": "por favor insira mais detalhes sobre o **BUG**, no minímo **30 caracteres** e menor que **150**.",
+    "send?": "deseja realmente enviar esse **BUG** para o meu desenvolvedor?"
+  },
+  "sugestion": {
+    "noArgs": "você não inseriu o que deseja sugerir.",
+    "noLength": "por favor insira mais detalhes sobre a **SUGESTÃO**, no minímo **30 caracteres** e menor que **150**.",
+    "send?": "deseja realmente enviar essa **SUGESTÃO** para o meu desenvolvedor?"
+  },
+  "perm": {
+    "erro": "você não tem permissões o suficiente para utilizar este comando!",
+    "attach": "preciso da permissão **ATTACH_FILES** para executar este comando."
+  },
+  "footer": {
+    "team": "Equipe: Zafriel | Todos os Direitos Reservados."
+  },
+  "noFind": "desculpe mas eu não achei nenhum comando com esse nome, você não quis dizer: **{{prefix}}{{speak}}**?"
+}

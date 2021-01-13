@@ -25,8 +25,15 @@ Message.prototype.quote = async function (content, options) {
   });
 };
 
+try {
+  require("./src/utils/LoaderPrototypes.js").loader();
+} catch (e) {
+  return process.exit(1);
+}
+
 const CLIENT = new (require("./src/Client.js"))({
   requireEnv: () => require("dotenv").config(),
   disabledEvents: ["guildMemberSpeaking"],
 });
 CLIENT.CONNECT();
+

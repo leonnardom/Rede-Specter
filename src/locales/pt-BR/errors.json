@@ -1,0 +1,21 @@
+{
+    "CommandError": {
+        "description": "Ocorreu um erro ao executar o comando. Ultilize: **{{prefix}} bugreport** para mandar um relato para meu Desenvolvedor!\nOu então entre em meu **[Servidor de Suporte]({{support}})** e reporte o bug!",
+        "footer": "Atenciosamente, equipe do {{user}}"
+    },
+    "noArgs": "você precisa escrever algo para **prosseguir**!",
+    "noClientDeveloper": "você precisa ser um desenvolvedor do **bot** para utilizar esse **comando**",
+    "noClientOwner": "desculpe, você precisa ser um de meus donos para utilizar esse **comando**",
+    "noVipActive": "desculpe esse comando é so pra quem tem acesso **vip**!",
+    "isClientBlackListed": "desculpe, mas você não pode me utilizar `(Lista Negra)`!",
+    "awaitReloadCommandNoCMD": "a atualização de **{{cmd}}**, não foi lida como um comando!",
+    "botMissingOnePermission": "Eu preciso da permissão {{permission}} para executar esse **comando**!",
+    "botMissingMultiplePermissions": "Eu preciso das permissões {{permission}} para executar esse **comando**!",
+    "missingOnePermission": "Você precisa da permissão {{permission}} para executar esse **comando**!",
+    "missingMultiplePermissions": "Você precisa das permissões {{permission}} para executar esse **comando**!",
+    "isCommandMaintence": "desculpe mas este comando está em **manutenção** 😪!.\nQue tal entrar em meu **[servidor de suporte]({{support}})** ? estarei esperando por você!",
+    "isClientMaintence": "no momento estou em manuntenção, aguarde até eu ser retirado para voltar a usar meus comandos normalmente!\nEnquanto isso o que acha de entrar em meu servidor de suporte? **[Convite]({{support}})**, estou esperando por você!",
+    "noSpecified": "ocorreu um erro não especificado!",
+    "ban": ", eu não pude banir o membro:",
+    "permissao": ", você não tem permissões o suficiente para utilizar este comando!"
+}

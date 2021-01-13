@@ -10,7 +10,6 @@ module.exports = class GuildRepository extends (
 
   parse(entity) {
     return {
-      language: "pt-BR",
       prefix: "/",
       ...(super.parse(entity) || {}),
     };

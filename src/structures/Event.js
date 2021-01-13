@@ -45,11 +45,33 @@ module.exports = class Event {
                     _id: command.commandHelp.name,
                     utils: {
                         ownerPermission: command.commandHelp.ownerNeed,
+                        devPermission: command.commandHelp.devNeed,
+                        vipUser: command.commandHelp.vipUser
                     }
                 })
             }
+            const client = await this.client.database.clientUtils.get(this.client.user.id);
+            const {
+                maintence,
+                utils: { vipUser, ownerPermission, devPermission }
+            } = await this.client.database.comandos.findOne(command.commandHelp.name);
 
-
+            if (blacklist) {
+                return { aproved: false, because: 'errors:isClientBlackListed' }
+            } if (client.maintence && (!developer) && (!owner)) {
+                return { aproved: false, because: 'errors:isClientMaintence' }
+            } else if (maintence && (!developer) && (!owner)) {
+                return { aproved: false, because: 'errors:isCommandMaintence' }
+            } else if (devPermission && (!developer) && (!owner)) {
+                return { aproved: false } // because: 'errors:noClientDeveloper'; >> [enable-option] (property)
+            } else if (ownerPermission && (!owner)) {
+                return { aproved: false } // because: 'errors:noClientOwner' >> [enable-option] (property)
+            } else if (vipUser && !vip && !owner) {
+                return { aproved: false, because: 'errors:noVipActive' }
+            }
+            /*
+             add the reason goes of your choice [enable the because property]
+             */
             return { aproved: true }
         } catch (err) {
             throw new ErrorCommand(err);

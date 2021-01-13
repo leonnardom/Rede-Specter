@@ -1,3 +1,6 @@
+const Emojis = require("../../utils/Emojis.js"),
+    ClientEmbed = require("../ClientEmbed.js");
+
 const { inspect } = require('util');
 
 module.exports = class EvaledCommand {

@@ -5,7 +5,7 @@ module.exports = class LinksUtils {
     }
 
     load() {
-        const links = require("../../utils/JSON").Utils[this.name];
+        const links = require("../../utils/JSON/").Utils[this.name];
         return this.utils.all.set(this.name, links);;
     }
 }

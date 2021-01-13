@@ -1,0 +1,105 @@
+{
+    "test": "a",
+    "msgupdate": {
+        "title": "Mensagem Editada",
+        "author": "Author:",
+        "antes": "Mensagem anterior:",
+        "depois": "Mensagem depois:",
+        "canal": "Canal:"
+    },
+    "msgdelete": {
+        "title": "Mensagem Deletada!",
+        "author": "Author:",
+        "canal": "Canal:",
+        "msg": "Mensagem:"
+    },
+    "avatarupdate":{
+        "update": "Trocou de Avatar",
+        "new": "Novo",
+        "old": "Antigo"
+    },
+    "nickupdate": {
+        "title": "alterou o nickname!",
+        "antes": "Antigo nick:",
+        "depois": "Novo nick:",
+        "alterado": "alterou o apelido"
+    },
+    "username": {
+        "title": "Username Alterado",
+        "antes": "Antigo nome:",
+        "depois": "Novo nome:",
+        "trocou": "trocou de nome!"
+    },
+    "rolecreate": {
+        "title": "Novo cargo criado",
+        "name": "Nome do cargo:"
+    },
+    "roleupdate": {
+        "ment": {
+            "on": "Sim",
+            "off": "Não"
+        },
+        "cargo": "O cargo:",
+        "att": "foi atualizado!",
+        "name": {
+            "name": "Nome:",
+            "antes": "Antigo:",
+            "depois": "Depois:"
+        },
+        "cargocolor": "Cargo com cor:",
+        "mentionable": "Mencionavel:",
+        "corhexa": {
+            "hexa": "Cor Hexadecimal:",
+            "antes": "Antes:",
+            "depois": "Depois:"
+        }
+    },
+    "channelcreate": {
+        "criado": "Novo canal criado",
+        "name": "Nome:",
+        "id": "ID:",
+        "tipo": "Tipo do canal:",
+        "text": "Texto",
+        "voice": "Voz",
+        "category": "Categoria",
+        "news": "Anúncio"
+    },
+    "channelupdate": {
+        "criado": "Canal:",
+        "att": "atualizado!",
+        "name": "Nome:",
+        "antes": "Antes:",
+        "depois": "Depois:",
+        "perm": "Permissões:"
+    },
+    "voiceupdate": {
+        "entrada": {
+            "canal": "Canal:",
+            "ids": "ID:",
+            "user": "Usuário:",
+            "title": "Entrada de Canal"
+        },
+        "saida": {
+            "canal": "Canal:",
+            "ids": "ID:",
+            "user": "Usuário:",
+            "title": "Saída de Canal"
+        },
+        "call": "Tempo:"
+    },
+    "roleadd": {
+        "title": "Cargo adicionado",
+        "cargo": "Cargo:",
+        "user": "Usuário:"
+    },
+    "roleremove": {
+        "title": "Cargo removido",
+        "cargo": "Cargo:",
+        "user": "Usuário:"
+    },
+    "topicupdate": {
+        "update": "Tópico atualizado",
+        "antes": "Antes:",
+        "depois": "Depois:"
+    }
+}

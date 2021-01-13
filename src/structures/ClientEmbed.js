@@ -1,14 +1,15 @@
-const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = class ClientEmbed extends (
-  Discord.MessageEmbed
+  MessageEmbed
 ) {
   constructor(user, data = {}) {
     super(data);
-    this.setFooter(
-      `Comando Executado por: ${user.tag}`,
-      user.displayAvatarURL({ dynamic: true })
-    );
-    this.setColor("#00fff8");
+    this.setColor(process.env.COLOR_EMBED);
+    if (user)
+      this.setFooter(
+        `${user.tag}`,
+        user.displayAvatarURL({ dynamic: true })
+      ).setTimestamp();
   }
 };
