@@ -2,9 +2,10 @@ module.exports = class Command {
     constructor(client) {
         this.client = client
 
-        this.name = 'commandName'
-        this.category = 'Category'
-        this.description = 'Not description'
+        this.name = 'Nome'
+        this.category = 'Categoria'
+        this.description = 'Sem Descrição'
+        this.usage = "Sem Informação"
         this.aliases = []
 
         this.enabled = true

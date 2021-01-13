@@ -8,7 +8,7 @@ module.exports = class Eval extends Command {
         this.client = client
 
         this.name = 'eval'
-        this.category = 'Admin'
+        this.category = 'Owner'
         this.description = 'Eval do Bot'
         this.aliases = []
 

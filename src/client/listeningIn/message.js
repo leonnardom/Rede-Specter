@@ -1,4 +1,3 @@
-const prefix = "/"
 
 module.exports = class {
     constructor(client) {
@@ -8,6 +7,8 @@ module.exports = class {
     async run(message) {
         if (message.author.bot) return
 
+        const prefix = "/"
+
         if (message.content.indexOf(prefix) !== 0) return
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
         const command = args.shift().toLowerCase()
@@ -16,6 +17,6 @@ module.exports = class {
 
         const cmd = this.client.commands.get(command) || this.client.commands.get(this.client.aliases.get(command))
         if (!cmd) return message.channel.send("Command not found.")
-        cmd.run(message, args)
+        cmd.run(message, args, prefix)
     }
 }

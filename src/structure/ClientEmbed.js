@@ -5,5 +5,6 @@ module.exports = class ClientEmbed extends Discord.MessageEmbed {
 		super(data)
 		this.setFooter('Executado por ' + user.tag, user.displayAvatarURL({dynamic: true}))
 		this.setColor(process.env.EMBED_COLOR)
+		this.setTimestamp()
 	}
 }
