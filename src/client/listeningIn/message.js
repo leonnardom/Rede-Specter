@@ -1,3 +1,4 @@
+const GetMention = (id) => new RegExp(`^<@!?${id}>( |)$`);
 
 module.exports = class {
     constructor(client) {
@@ -8,6 +9,12 @@ module.exports = class {
         if (message.author.bot) return
 
         const prefix = process.env.PREFIX
+
+        if (message.content.match(GetMention(this.client.user.id))) {
+            message.channel.send(
+              `Olá ${message.author}.\nSou o Bot Oficial da **${process.env.SERVER_NAME}**, caso queira saber minha lista de comandos use **${prefix}help**`
+            );
+          }
 
         if (message.content.indexOf(prefix) !== 0) return
         const args = message.content.slice(prefix.length).trim().split(/ +/g)
