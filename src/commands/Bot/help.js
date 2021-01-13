@@ -21,6 +21,7 @@ module.exports = class Help extends (
   async run(message, args, prefix) {
     const Bot = [];
     const Owner = [];
+    const Information = [];
 
     const { commands } = message.client;
 
@@ -76,13 +77,19 @@ module.exports = class Help extends (
       commands.map((cmd) => {
         if (cmd.category === "Bot") Bot.push(cmd.name);
         else if (cmd.category == "Owner") Owner.push(cmd.name);
+        else if (cmd.category == "Information") Information.push(cmd.name);
         else Bot.push(cmd.name);
+
       });
 
       HELP.addFields(
         {
           name: `${Emojis.Robo} Bot`,
           value: Bot.map((x) => `\`${x}\``).join(", "),
+        },
+        {
+          name: `${Emojis.Information} Informação`,
+          value: Information.map((x) => `\`${x}\``).join(", "),
         },
         {
           name: `${Emojis.Owner} Owner`,
