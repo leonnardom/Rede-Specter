@@ -11,5 +11,11 @@ module.exports = {
   Information: "📝",
   Economy: "💰",
   Bank: "🏦",
-  Cooldown: "⏳"
+  Cooldown: "⏳",
+  Coins: "💵",
+  Medal: "🏅",
+  First: "🥇",
+  Second: "🥈",
+  Third: "🥉",
+  Rank: "🎖️"
 };

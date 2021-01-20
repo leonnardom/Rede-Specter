@@ -6,6 +6,7 @@ let userSchema = new Schema({
   // ----------------------------------------- Economy
   coins: { type: Number, default: 0 },
   daily: { type: String },
+  bank: { type: Number, default: 0 },
   // -----------------------------------------
 });
 
