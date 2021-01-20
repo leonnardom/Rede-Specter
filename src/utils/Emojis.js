@@ -9,4 +9,7 @@ module.exports = {
   Uso: "⚙️",
   User: "👤",
   Information: "📝",
+  Economy: "💰",
+  Bank: "🏦",
+  Cooldown: "⏳"
 };

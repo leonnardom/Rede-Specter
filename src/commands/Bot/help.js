@@ -22,6 +22,7 @@ module.exports = class Help extends (
     const Bot = [];
     const Owner = [];
     const Information = [];
+    const Economy = [];
 
     const { commands } = message.client;
 
@@ -78,6 +79,8 @@ module.exports = class Help extends (
         if (cmd.category === "Bot") Bot.push(cmd.name);
         else if (cmd.category == "Owner") Owner.push(cmd.name);
         else if (cmd.category == "Information") Information.push(cmd.name);
+        else if (cmd.category == "Economy") Economy.push(cmd.name);
+
         else Bot.push(cmd.name);
 
       });
@@ -90,6 +93,10 @@ module.exports = class Help extends (
         {
           name: `${Emojis.Information} Informação`,
           value: Information.map((x) => `\`${x}\``).join(", "),
+        },
+        {
+          name: `${Emojis.Economy} Economia`,
+          value: Economy.map((x) => `\`${x}\``).join(", "),
         },
         {
           name: `${Emojis.Owner} Owner`,
