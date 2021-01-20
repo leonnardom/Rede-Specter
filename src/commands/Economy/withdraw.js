@@ -3,21 +3,20 @@ ClientEmbed = require("../../structure/ClientEmbed");
 const Emojis = require("../../utils/Emojis");
 const Util = require("../../utils/Util");
 const User = require("../../database/Schemas/User");
-const moment = require("moment");
 require("moment-duration-format");
 
-module.exports = class Deposity extends (
+module.exports = class Withdraw extends (
   Command
 ) {
   constructor(client) {
     super(client);
     this.client = client;
 
-    this.name = "deposity";
+    this.name = "withdraw";
     this.category = "Economy";
-    this.description = "Deposite seu dinheiro no banco";
-    this.usage = "depositar <quantia/all>";
-    this.aliases = ["depositar", "deep", "dep"];
+    this.description = "Saque seu dinheiro no banco";
+    this.usage = "sacar <quantia/all>";
+    this.aliases = ["sacar", "tirar"];
 
     this.enabled = true;
     this.guildOnly = false;
@@ -26,12 +25,12 @@ module.exports = class Deposity extends (
     User.findOne({ _id: message.author.id }, async (err, user) => {
       if (!args[0])
         return message.channel.send(
-          `${Emojis.Errado} - ${message.author} modo de usar o comando: **${prefix}depositar <quantia/tudo>**`
+          `${Emojis.Errado} - ${message.author} modo de usar o comando: **${prefix}sacar <quantia/tudo>**`
         );
 
-      if (user.coins == 0) {
+      if (user.bank == 0) {
         return message.channel.send(
-          `${Emojis.Economy} - ${message.author}, você não tem coins para depositar.`
+          `${Emojis.Economy} - ${message.author}, você não tem coins para sacar.`
         );
       }
 
@@ -43,36 +42,36 @@ module.exports = class Deposity extends (
           .send(
             `${Emojis.Certo} - ${
               message.author
-            }, você depositou **R$${Util.toAbbrev(
-              user.coins
-            )}** com sucesso em seu banco.`
+            }, você sacou **R$${Util.toAbbrev(
+              user.bank
+            )}** com sucesso do seu banco.`
           )
-          .then(async (x) => {
+          .then(async () => {
             await User.findOneAndUpdate(
               { _id: message.author.id },
-              { $set: { bank: user.bank + user.coins, coins: 0 } }
+              { $set: { bank: 0, coins: user.bank + user.coins } }
             );
           });
       } else {
         if (!quantia && isNaN(args[0])) {
           return message.channel.send(
-            `${Emojis.Errado} - ${message.author}, você deve inserir quanto deseja depositar.`
+            `${Emojis.Errado} - ${message.author}, você deve inserir quanto deseja sacar.`
           );
-        } else if (user.coins < quantia) {
+        } else if (user.bank < quantia) {
           return message.channel.send(
             `${Emojis.Economy} - ${
               message.author
-            }, desculpe mas você não possui essa quantia para depositar, no momento você tem **R$${user.coins.toLocaleString()}**.`
+            }, desculpe mas você não possui essa quantia para sacar, no momento você tem **R$${user.bank.toLocaleString()}**.`
           );
         } else {
           message.channel.send(
             `${Emojis.Bank} - ${
               message.author
-            }, você depositou com sucesso **R$${quantia.toLocaleString()}**.`
+            }, você sacou com sucesso **R$${quantia.toLocaleString()}**.`
           );
           await User.findOneAndUpdate(
             { _id: message.author.id },
-            { $set: { bank: user.bank + quantia, coins: user.coins - quantia } }
+            { $set: { bank: user.bank - quantia, coins: user.coins + quantia } }
           );
         }
       }
