@@ -16,6 +16,7 @@ class Main extends Client {
     return super.login(token);
   }
 
+
   load(commandPath, commandName) {
     const props = new (require(`${commandPath}/${commandName}`))(this);
     props.location = commandPath;
@@ -53,3 +54,7 @@ const onLoad = async () => {
   client.login();
 };
 onLoad();
+
+module.exports = {
+  Util: require('./utils/index.js')
+}
