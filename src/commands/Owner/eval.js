@@ -1,35 +1,40 @@
-const Command = require('../../structure/Command');
-      DiscordEmbed = require('../../structure/ClientEmbed'),
-      { ownerid } = process.env.OWNER_ID
+const Command = require("../../structure/Command");
+DiscordEmbed = require("../../structure/ClientEmbed");
 
-module.exports = class Eval extends Command {
-    constructor(client) {
-        super(client)
-        this.client = client
+module.exports = class Eval extends (
+  Command
+) {
+  constructor(client) {
+    super(client);
+    this.client = client;
 
-        this.name = 'eval'
-        this.category = 'Owner'
-        this.description = 'Eval do Bot'
-        this.aliases = []
+    this.name = "eval";
+    this.category = "Owner";
+    this.description = "Eval do Bot";
+    this.aliases = [];
 
-        this.enabled = true
-        this.guildOnly = false
+    this.enabled = true;
+    this.guildOnly = false;
+  }
+  async run(message, args) {
+    if (message.author.id !== "600804786492932101")
+      return message.channel.send("Sem permissão");
+    try {
+      let argumentos = args.join(" ");
+      if (!argumentos)
+        return message.channel.send(
+          `${message.author}, escreve algo primeiro.`
+        );
+      let code = eval(argumentos);
+
+      if (typeof code !== "string")
+        code = require("util").inspect(code, { depth: 0 });
+      let embed = new DiscordEmbed(message.author)
+        .addField("Entrada", `\`\`\`js\n${argumentos}\`\`\``)
+        .addField("Saída", `\`\`\`js\n${code}\n\`\`\``);
+      message.channel.send(embed);
+    } catch (e) {
+      message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
     }
-    async run(message, args){
-        if (!message.author.id == ownerid) return message.channel.send("Sem permissão")
-        try {
-            let argumentos = args.join(" ");
-            if(!argumentos) return message.channel.send(`${message.author}, escreve algo primeiro.`)
-            let code = eval(argumentos)
-    
-            if (typeof code !== 'string')
-                code = require('util').inspect(code, { depth: 0 });
-            let embed = new DiscordEmbed(message.author)
-            .addField('Entrada', `\`\`\`js\n${argumentos}\`\`\``)
-            .addField('Saída', `\`\`\`js\n${code}\n\`\`\``)
-            message.channel.send(embed)
-        } catch(e) {
-            message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
-        }
-    }
-}
+  }
+};

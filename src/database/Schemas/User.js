@@ -7,6 +7,8 @@ let userSchema = new Schema({
   coins: { type: Number, default: 0 },
   daily: { type: String },
   bank: { type: Number, default: 0 },
+  // ----------------------------------------- Steal
+  steal: { type: String },
   // -----------------------------------------
 });
 

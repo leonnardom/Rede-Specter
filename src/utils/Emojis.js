@@ -17,5 +17,7 @@ module.exports = {
   First: "🥇",
   Second: "🥈",
   Third: "🥉",
-  Rank: "🎖️"
+  Rank: "🎖️",
+  Police: "👮",
+  Gun: "🔫"
 };

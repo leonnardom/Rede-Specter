@@ -3,7 +3,6 @@ ClientEmbed = require("../../structure/ClientEmbed");
 const Emojis = require("../../utils/Emojis");
 const Util = require("../../utils/Util");
 const User = require("../../database/Schemas/User");
-const moment = require("moment");
 require("moment-duration-format");
 
 module.exports = class Coins extends (
