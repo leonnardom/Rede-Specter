@@ -2,6 +2,7 @@ const GetMention = (id) => new RegExp(`^<@!?${id}>( |)$`);
 const User = require("../../database/Schemas/User");
 Client = require("../../database/Schemas/Client");
 Guild = require("../../database/Schemas/Guild");
+const Utils = require('../../utils/Util')
 
 module.exports = class {
   constructor(client) {
@@ -12,7 +13,9 @@ module.exports = class {
     User.findOne({ _id: message.author.id }, async (err, user) => {
       Client.findOne({ _id: this.client.user.id }, async (err, bot) => {
         Guild.findOne({ _id: message.guild.id }, async (err, server) => {
-          if (message.author.bot) return;
+          //if (message.author.bot) return;
+
+          const utils = Utils
 
           if (user) {
             if (bot) {
@@ -59,7 +62,7 @@ module.exports = class {
                     }
                 }
 
-                cmd.run(message, args, prefix);
+                cmd.run(message, args, prefix, utils);
               } else {
                 Guild.create({ _id: message.guild.id });
               }

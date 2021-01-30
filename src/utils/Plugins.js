@@ -1,7 +1,7 @@
 const data = {
-  abbrev: require("../utils/plugins/abbrev")
+  abbrev: require("../utils/plugins/abbrev"),
+  renderEmoji: require("../utils/plugins/renderEmoji.js")
 };
 
-console.log("(PLUGINS) - Plugins carregados com sucesso.")
 
 module.exports = data;

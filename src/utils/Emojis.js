@@ -19,5 +19,17 @@ module.exports = {
   Third: "🥉",
   Rank: "🎖️",
   Police: "👮",
-  Gun: "🔫"
+  Gun: "🔫",
+  Online: "<:online:687577164702679068>",
+  Ocupado: "<:dnd:687577184092946467>",
+  Ausente: "<:idle:687577177943965696>",
+  Offline: "<:offline:687577171182616596>",
+  Status: "🔖",
+  Date: "📅",
+  Early: "<:early:782734021217878076>",
+  Brilliance: "<:brilliance:782733731516907540>",
+  Bravery: "<:bravery:782733948588916758>",
+  Balance: "<:balance:782733984206946304>",
+  Developer: "<:developer:782733790426300456>",
+  BotVerificado: "<:botverificado:782739117360021544>",
 };
