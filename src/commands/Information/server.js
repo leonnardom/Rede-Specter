@@ -2,7 +2,7 @@ const Command = require("../../structure/Command");
 ClientEmbed = require("../../structure/ClientEmbed");
 Emojis = require("../../utils/Emojis");
 const Gamedig = require("gamedig");
-const Util = require('../../utils/Util')
+const Util = require("../../utils/Util");
 module.exports = class Help extends (
   Command
 ) {
