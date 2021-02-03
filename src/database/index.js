@@ -9,7 +9,7 @@ module.exports = {
         useFindAndModify: false,
       });
 
-      console.log(`(DATABASE)- Conectado com Sucesso ao Banco de Dados.`);
+      console.log(`(DATABASE) - Conectado com Sucesso ao Banco de Dados.`);
     } catch (err) {
       if (err) return console.log(`(DATABASE) - ERROR: ${err}`);
     }

@@ -1,5 +1,5 @@
 {
-  "name": "DiscordBot",
+  "name": "specter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,13 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "zSpl1nterUS_#6544",
   "license": "ISC",
   "dependencies": {
     "alexflipnote.js": "^2.3.4",
     "canvas": "^2.6.1",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
+    "fetch": "^1.1.0",
     "gamedig": "^2.0.24",
     "jimp": "^0.16.1",
     "klaw": "^3.0.0",

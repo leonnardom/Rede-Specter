@@ -2,7 +2,9 @@ const GetMention = (id) => new RegExp(`^<@!?${id}>( |)$`);
 const User = require("../../database/Schemas/User");
 Client = require("../../database/Schemas/Client");
 Guild = require("../../database/Schemas/Guild");
-const Utils = require('../../utils/Util')
+const ClientEmbed = require("../../structure/ClientEmbed");
+const Utils = require("../../utils/Util");
+const Emojis = require("../../utils/Emojis");
 
 module.exports = class {
   constructor(client) {
@@ -13,14 +15,14 @@ module.exports = class {
     User.findOne({ _id: message.author.id }, async (err, user) => {
       Client.findOne({ _id: this.client.user.id }, async (err, bot) => {
         Guild.findOne({ _id: message.guild.id }, async (err, server) => {
-          //if (message.author.bot) return;
+          if (message.author.bot) return;
 
-          const utils = Utils
+          const utils = Utils;
 
           if (user) {
             if (bot) {
               if (server) {
-                const prefix = "!";
+                const prefix = "/";
 
                 if (message.content.match(GetMention(this.client.user.id))) {
                   message.channel.send(
@@ -41,7 +43,7 @@ module.exports = class {
                 const cmd =
                   this.client.commands.get(command) ||
                   this.client.commands.get(this.client.aliases.get(command));
-                if (!cmd) return message.channel.send("Command not found.");
+                if (!cmd) return message.react(Emojis.Errado);
 
                 const cmdblock = server.cmdblock;
 
@@ -61,8 +63,31 @@ module.exports = class {
                       }
                     }
                 }
+                let owners = [
+                  process.env.OWNER_ID,
+                  "757347805529636897",
+                  "574640825003147264",
+                  "342757511218200588",
+                ];
 
-                cmd.run(message, args, prefix, utils);
+                if (!owners.some((x) => x === message.author.id))
+                  return message.channel.send(
+                    `${Emojis.Errado} - ${message.author}, estou em manutenção no momento bobinho(a). ^^`
+                  );
+
+                if (!owners.some((x) => x === message.author.id)) {
+                  if (cd.includes(message.author.id)) {
+                    setTimeout(() => {
+                      cd.splice(cd.indexOf(message.author.id), 1);
+                    }, 5000);
+
+                    return message.channel.send(
+                      `${Emojis.Cooldown} - ${message.author}, aguarde **5 segundos** para executar outro comando.`
+                    );
+                  } else cd.push(message.author.id);
+                }
+
+                await cmd.run(message, args, prefix, utils);
               } else {
                 Guild.create({ _id: message.guild.id });
               }

@@ -1,6 +1,13 @@
+const { UserFlags, Client } = require("discord.js");
 const Command = require("../../structure/Command");
+const Emojis = require("../../utils/Emojis");
 ClientEmbed = require("../../structure/ClientEmbed");
-Emojis = require("../../utils/Emojis");
+const msgTimeOut = async (msg, time) => {
+  await new Promise(function (resolve, reject) {
+    setTimeout(resolve, time);
+  });
+  return msg.reactions.removeAll().catch(() => {});
+};
 
 module.exports = class Help extends (
   Command
@@ -23,6 +30,7 @@ module.exports = class Help extends (
     const Owner = [];
     const Information = [];
     const Economy = [];
+    const Misc = [];
 
     const { commands } = message.client;
 
@@ -65,46 +73,209 @@ module.exports = class Help extends (
 
       message.channel.send(AJUDA);
     } else {
+      commands.map((cmd) => {
+        if (cmd.category === "Bot")
+          Bot.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+        else if (cmd.category == "Owner")
+          Owner.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+        else if (cmd.category == "Information")
+          Information.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+        else if (cmd.category == "Economy")
+          Economy.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+        else if (cmd.category == "Misc")
+          Misc.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+        else
+          Bot.push({
+            name: cmd.name,
+            aliases: cmd.aliases,
+            desc: cmd.description,
+          });
+      });
+
       const HELP = new ClientEmbed(message.author)
         .setAuthor(
           `Central de Ajuda do Bot`,
           this.client.user.displayAvatarURL({ size: 2048 })
         )
         .setDescription(
-          `${Emojis.User} - **${message.author.tag}**, aqui você irá encontrar todos os meus comandos, para saber mais sobre algum comando use **\`${prefix}help <comando>\`**\nNo momento tenho **${this.client.commands.size} comandos**.`
+          `${Emojis.User} - **${message.author.tag}**, aqui você irá encontrar todos os meus comandos, para saber mais sobre algum comando use **\`${prefix}help <comando/aliases>\`**\nNo momento tenho **${this.client.commands.size} comandos**.\n\n${Emojis.One} | Comandos do **Bot**\n${Emojis.Two} | Comandos de **Informação**\n${Emojis.Three} | Comandos de **Economia**\n${Emojis.Four} | Comandos sem **Categoria**\n${Emojis.Five} | Comandos **Restritos**\n\n${Emojis.Back} | Volta a **Página Inicial**\n${Emojis.Errado} | Deleta a **Mensagem**`
         )
         .setThumbnail(this.client.user.displayAvatarURL({ size: 2048 }));
 
-      commands.map((cmd) => {
-        if (cmd.category === "Bot") Bot.push(cmd.name);
-        else if (cmd.category == "Owner") Owner.push(cmd.name);
-        else if (cmd.category == "Information") Information.push(cmd.name);
-        else if (cmd.category == "Economy") Economy.push(cmd.name);
+      await message.channel.send(HELP).then(async (msg) => {
+        msg.react(Emojis.One);
+        msg.react(Emojis.Two);
+        msg.react(Emojis.Three);
+        msg.react(Emojis.Four);
+        msg.react(Emojis.Five);
+        msg.react(Emojis.Back);
+        msg.react(Emojis.Errado);
 
-        else Bot.push(cmd.name);
+        const filter = (reaction, user) =>
+          [
+            Emojis.One,
+            Emojis.Two,
+            Emojis.Three,
+            Emojis.Four,
+            Emojis.Five,
+            Emojis.Back,
+            Emojis.Errado,
+          ].includes(reaction.emoji.name) && user.id === message.author.id;
 
+        const collector = msg.createReactionCollector(filter, { time: 120000 });
+
+        msgTimeOut(msg, 120000);
+
+        collector.on("collect", async (r) => {
+          switch (r.emoji.name) {
+            case Emojis.One: {
+              const E1 = new ClientEmbed(message.author)
+                .addField(
+                  `${Emojis.Robo} Comandos do Bot`,
+                  Bot.map(
+                    (x) =>
+                      `\`${prefix}${x.name}${
+                        !x.aliases.length
+                          ? ""
+                          : ` [${x.aliases.map((x) => x).join(", ")}]`
+                      }\` - ${x.desc}`
+                  ).join("\n")
+                )
+                .setThumbnail(
+                  this.client.user.displayAvatarURL({ size: 2048 })
+                );
+
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(E1);
+              break;
+            }
+
+            case Emojis.Two: {
+              const E2 = new ClientEmbed(message.author)
+                .addField(
+                  `${Emojis.Information} Comandos de Informação`,
+                  Information.map(
+                    (x) =>
+                      `\`${prefix}${x.name}${
+                        !x.aliases.length
+                          ? ""
+                          : ` [${x.aliases.map((x) => x).join(", ")}]`
+                      }\` - ${x.desc}`
+                  ).join("\n")
+                )
+                .setThumbnail(
+                  this.client.user.displayAvatarURL({ size: 2048 })
+                );
+
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(E2);
+              break;
+            }
+
+            case Emojis.Three: {
+              const E3 = new ClientEmbed(message.author)
+                .addField(
+                  `${Emojis.Economy} Comandos de Economia`,
+                  Economy.map(
+                    (x) =>
+                      `\`${prefix}${x.name}${
+                        !x.aliases.length
+                          ? ""
+                          : ` [${x.aliases.map((x) => x).join(", ")}]`
+                      }\` - ${x.desc}`
+                  ).join("\n")
+                )
+                .setThumbnail(
+                  this.client.user.displayAvatarURL({ size: 2048 })
+                );
+
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(E3);
+              break;
+            }
+
+            case Emojis.Four: {
+              const E4 = new ClientEmbed(message.author)
+                .addField(
+                  `${Emojis.Robo} Comandos sem Categoria`,
+                  Misc.map(
+                    (x) =>
+                      `\`${prefix}${x.name}${
+                        !x.aliases.length
+                          ? ""
+                          : ` [${x.aliases.map((x) => x).join(", ")}]`
+                      }\` - ${x.desc}`
+                  ).join("\n")
+                )
+                .setThumbnail(
+                  this.client.user.displayAvatarURL({ size: 2048 })
+                );
+
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(E4);
+              break;
+            }
+
+            case Emojis.Five: {
+              const E5 = new ClientEmbed(message.author)
+                .addField(
+                  `${Emojis.Owner} Comandos Restritos`,
+                  Owner.map(
+                    (x) =>
+                      `\`${prefix}${x.name}${
+                        !x.aliases.length
+                          ? ""
+                          : ` [${x.aliases.map((x) => x).join(", ")}]`
+                      }\` - ${x.desc}`
+                  ).join("\n")
+                )
+                .setThumbnail(
+                  this.client.user.displayAvatarURL({ size: 2048 })
+                );
+
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(E5);
+              break;
+            }
+
+            case Emojis.Back: {
+              r.users.remove(r.users.cache.last());
+
+              msg.edit(HELP);
+              break;
+            }
+
+            case Emojis.Errado: {
+              msg.delete();
+            }
+          }
+        });
       });
-
-      HELP.addFields(
-        {
-          name: `${Emojis.Robo} Bot`,
-          value: Bot.map((x) => `\`${x}\``).join(", "),
-        },
-        {
-          name: `${Emojis.Information} Informação`,
-          value: Information.map((x) => `\`${x}\``).join(", "),
-        },
-        {
-          name: `${Emojis.Economy} Economia`,
-          value: Economy.map((x) => `\`${x}\``).join(", "),
-        },
-        {
-          name: `${Emojis.Owner} Owner`,
-          value: Owner.map((x) => `\`${x}\``).join(", "),
-        }
-      );
-
-      message.channel.send(message.author, HELP);
     }
   }
 };

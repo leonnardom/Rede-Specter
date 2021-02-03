@@ -30,6 +30,8 @@ module.exports = class Coins extends (
     this.guildOnly = false;
   }
   async run(message, args, prefix, utils) {
+    moment.locale("pt-BR");
+
     const USER =
       message.mentions.users.first() ||
       this.client.users.cache.get(args[0]) ||
@@ -81,7 +83,7 @@ module.exports = class Coins extends (
           const canvas = createCanvas(800, 600);
           const ctx = canvas.getContext("2d");
 
-          const background = await loadImage("./src/assets/img/Profile_1.jpg");
+          const background = await loadImage("./src/assets/img/Profile_2.jpg");
 
           ctx.drawImage(background, 0, 0, 800, 600);
 
@@ -111,8 +113,8 @@ module.exports = class Coins extends (
 
           await utils.renderEmoji(
             ctx,
-            USER.username.length > 25
-              ? USER.username.slice(0, 25) + "..."
+            USER.username.length > 20
+              ? USER.username.slice(0, 20) + "..."
               : USER.username,
             400,
             580
@@ -122,7 +124,7 @@ module.exports = class Coins extends (
 
           await utils.renderEmoji(
             ctx,
-            `${Emojis.Medal} Ranking Monetário: ${top}º`,
+            `${Emojis.Medal} Ranking Monetário: ${top == 0 ? "0" : `${top}º`}`,
             430,
             530
           );
@@ -146,7 +148,12 @@ module.exports = class Coins extends (
             490,
             380
           );
-          await utils.renderEmoji(ctx, `${flags}`, 520, 330);
+          await utils.renderEmoji(
+            ctx,
+            `${!flags.length ? "Sem Badge" : flags}`,
+            520,
+            330
+          );
 
           ctx.arc(115, 500, 85, 0, Math.PI * 2, true);
           ctx.lineWidth = 6;

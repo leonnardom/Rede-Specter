@@ -9,6 +9,7 @@ class Main extends Client {
     super(options);
     this.commands = new Collection();
     this.aliases = new Collection();
+    this.tickets = new Array();
   }
 
   login(token) {

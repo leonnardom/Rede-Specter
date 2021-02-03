@@ -21,7 +21,7 @@ module.exports = class Rank extends (
 
     this.enabled = true;
     this.guildOnly = false;
-  } 
+  }
   async run(message, args, prefix) {
     await require("mongoose")
       .connection.collection("users")
@@ -29,7 +29,9 @@ module.exports = class Rank extends (
       .toArray((err, res) => {
         if (err) throw err;
 
-        let top_users = res.sort((x, f) => f.bank - x.bank);
+        let top_users = res.sort(
+          (x, f) => f.bank + (f.coins || 0) - (x.bank + (x.coins || 0))
+        );
 
         const TOP = new ClientEmbed(message.author)
           .setAuthor(`${Emojis.Rank} - Ranking Monetário`)
@@ -45,7 +47,9 @@ module.exports = class Rank extends (
                       : f + 1 == 3
                       ? `${Emojis.Third} 3`
                       : `${Emojis.Medal} ${f + 1}`
-                  }º: <@${x._id}> - Coins ( **${Util.toAbbrev(x.bank)}** )`
+                  }º: <@${x._id}> - Coins ( **${Util.toAbbrev(
+                    x.bank + x.coins
+                  )}** )`
               )
               .join("\n")}`
           );
