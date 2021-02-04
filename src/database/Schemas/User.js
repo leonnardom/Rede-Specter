@@ -17,7 +17,6 @@ let userSchema = new Schema({
     level: { type: Number, default: 1 },
     nextLevel: { type: Number, default: 150 },
     cooldown: { type: Number, default: 0 },
-    money: { type: Number, default: 100 },
     total: { type: Number, default: 0 },
     works: {
       Lixeiro: {

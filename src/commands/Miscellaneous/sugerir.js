@@ -23,22 +23,22 @@ module.exports = class Coins extends (
       .send(
         `${Emojis.Certo} - ${message.author}, qual a sugestão que você deseja enviar?\n\nCaso deseje cancelar a ação basta digitar: **\`cancelar\`**.`
       )
-        .then(async (msg) => {
-          let collector = msg.channel.createMessageCollector(
-            (m) => m.author.id === message.author.id,
-            { max: 1, time: 600000 }
-          );
+      .then(async (msg) => {
+        let collector = msg.channel.createMessageCollector(
+          (m) => m.author.id === message.author.id,
+          { max: 1, time: 600000 }
+        );
 
-          collector.on("collect", async (collected) => {
-            if (
-              ["cancelar", "cancel"].includes(collected.content.toLowerCase())
-            ) {
-              message.channel.send(
-                `${Emojis.Certo} - ${message.author}, ação cancelada com sucesso.`
-              );
+        collector.on("collect", async (collected) => {
+          if (
+            ["cancelar", "cancel"].includes(collected.content.toLowerCase())
+          ) {
+            message.channel.send(
+              `${Emojis.Certo} - ${message.author}, ação cancelada com sucesso.`
+            );
 
-              return collector.stop();
-            }
+            return collector.stop();
+          }
           message.channel.send(
             `${Emojis.Certo} - ${message.author}, sugestão enviada com sucesso.`
           );

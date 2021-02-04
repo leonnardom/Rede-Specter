@@ -11,7 +11,7 @@ module.exports = class Ping extends (
     this.name = "ping";
     this.category = "Bot";
     this.description = "Veja a Latência da API";
-    this.usage = "ping"
+    this.usage = "ping";
     this.aliases = ["latency"];
 
     this.enabled = true;

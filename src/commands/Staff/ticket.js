@@ -18,103 +18,106 @@ module.exports = class Ticket extends (
     this.guildOnly = false;
   }
   async run(message, args, prefix) {
+    if (!args[0]) {
+      const embeds = new ClientEmbed(message.author)
 
-    if(!args[0]) {
-const embeds = new ClientEmbed(message.author)
-                
-.setDescription('`Carregando sistema de tickets, em andamento!`')
-.setTimestamp()
+        .setDescription("`Carregando sistema de tickets, em andamento!`")
+        .setTimestamp();
 
-message.channel.send(embeds)
+      message.channel.send(embeds);
 
-setTimeout(() => {
+      setTimeout(() => {
+        const embed = new ClientEmbed(message.author)
 
-const embed = new ClientEmbed(message.author)
+          .setDescription(
+            "`Sistema de tickets carregado, envio de mensagem em andamento!`"
+          )
+          .setTimestamp();
 
-.setDescription('`Sistema de tickets carregado, envio de mensagem em andamento!`')
-.setTimestamp()
+        message.channel.send(embed);
 
-message.channel.send(embed)
+        setTimeout(() => {
+          const embed = new ClientEmbed(message.author)
 
-setTimeout(() => {
-
-    const embed = new ClientEmbed(message.author)
-
-    .setTitle("Rede Specter - Ticket")
-    .setDescription(`󠂪󠂪 󠂪󠂪 󠂪󠂪󠂪 󠂪󠂪 󠂪󠂪
+            .setTitle("Rede Specter - Ticket")
+            .setDescription(
+              `󠂪󠂪 󠂪󠂪 󠂪󠂪󠂪 󠂪󠂪 󠂪󠂪
     > Clique no emoji abaixo para ser redirecionado a criação de seu ticket.
-    󠂪󠂪 󠂪󠂪 󠂪󠂪󠂪 󠂪󠂪 󠂪󠂪`)
-    .setTimestamp()
+    󠂪󠂪 󠂪󠂪 󠂪󠂪󠂪 󠂪󠂪 󠂪󠂪`
+            )
+            .setTimestamp();
 
-    this.client.channels.cache.get(process.env.CHANNEL_ID).send(embed).then(function (message) {
+          this.client.channels.cache
+            .get(process.env.CHANNEL_ID)
+            .send(embed)
+            .then(function (message) {
+              message.react("✅");
+            });
 
-        message.react("✅")
-    })
+          const embede = new ClientEmbed(message.author)
 
-    const embede = new ClientEmbed(message.author)
+            .setDescription("`Mensagem enviada com sucesso!`")
+            .setTimestamp();
 
-    .setDescription('`Mensagem enviada com sucesso!`')
-    .setTimestamp()
-
-    message.channel.send(embede)
-}, 5000)
-}, 6000)
-return;
+          message.channel.send(embede);
+        }, 5000);
+      }, 6000);
+      return;
     }
 
-    if(['fechar', 'close'].includes(args[0].toLowerCase())) {
-        if(this.client.tickets.includes(message.channel.id)) {
-            CloseTicket(message)
-        }
+    if (["fechar", "close"].includes(args[0].toLowerCase())) {
+      if (this.client.tickets.includes(message.channel.id)) {
+        CloseTicket(message);
+      }
     }
   }
-}
+};
 
 async function AwaitReact(message, author, time, validReactions) {
   time *= 1000;
-  for(const reaction of validReactions) await message.react(reaction)
-      const filter = (reaction, user) => validReactions.includes(reaction.emoji.name) && user.id === author.id;
+  for (const reaction of validReactions) await message.react(reaction);
+  const filter = (reaction, user) =>
+    validReactions.includes(reaction.emoji.name) && user.id === author.id;
   return message
-  .awaitReactions(filter, { max: 1, time: time }).then(collected => collected.first() && collected.first().emoji.name)
+    .awaitReactions(filter, { max: 1, time: time })
+    .then((collected) => collected.first() && collected.first().emoji.name);
 }
 
 async function CloseTicket(message) {
-  const chooseArr = ["✅", "❎"]
+  const chooseArr = ["✅", "❎"];
 
   const embed = new ClientEmbed(message.author)
 
-  .setDescription('`Você quer fechar o ticket ?`')
-  .setTimestamp()
+    .setDescription("`Você quer fechar o ticket ?`")
+    .setTimestamp();
 
-  const m = await message.channel.send(embed)
-  const reacted = await AwaitReact(m, message.author, 10, chooseArr)
-  const result = await getResult(reacted)
+  const m = await message.channel.send(embed);
+  const reacted = await AwaitReact(m, message.author, 10, chooseArr);
+  const result = await getResult(reacted);
 
-  message.channel.send(result)
-  m.reactions.removeAll()
+  message.channel.send(result);
+  m.reactions.removeAll();
 
   function getResult(me) {
-      if(me === "❎") {
+    if (me === "❎") {
+      const embed = new ClientEmbed(message.author)
 
-          const embed = new ClientEmbed(message.author)
+        .setDescription("`Ação cancelada`")
+        .setTimestamp();
 
-          .setDescription('`Ação cancelada`')
-          .setTimestamp()
+      return embed;
+    } else if (me === "✅") {
+      const embed = new ClientEmbed(message.author)
 
-          return embed
-      } else if(me === "✅") {
+        .setDescription("`O ticket fechará em 5 segundos`")
+        .setTimestamp();
 
-          const embed = new ClientEmbed(message.author)
+      message.channel.setName("ticket-fechado");
 
-          .setDescription('`O ticket fechará em 5 segundos`')
-          .setTimestamp()
-
-          message.channel.setName("ticket-fechado")
-
-          setTimeout(() => {
-              message.channel.delete()
-          }, 5000)
-          return embed
-      }
+      setTimeout(() => {
+        message.channel.delete();
+      }, 5000);
+      return embed;
+    }
   }
 }

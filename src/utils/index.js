@@ -1,3 +1,3 @@
 module.exports = {
-    Util: require("../utils/Util.js")
-}
+  Util: require("../utils/Util.js"),
+};
