@@ -272,24 +272,29 @@ module.exports = class Work extends (
     }
 
     if (["registrar", "register"].includes(args[0].toLowerCase())) {
-      if (work.register) {
-        return message.channel.send(
-          `${Emojis.Errado} - ${message.author}, você já está registrado, portanto não é possível registrar novamente.`
-        );
-      } else {
-        message.channel.send(
-          `${Emojis.Certo} - ${message.author}, parabéns por se registrar na empresa, hoje começa seus dias de sofrência, você está começando como **Lixeiro** no Level **1** com o salário de **R$${worke.works.Lixeiro.coins}**, com o tempo irá upar e receber mais dinheiro em empregos melhores.`
-        );
-        await User.findOneAndUpdate(
-          { _id: message.author.id },
-          {
-            $set: {
-              "work.register": true,
-              "work.works.Lixeiro.active": true,
-            },
-          }
-        );
-      }
+      User.findOne({ _id: message.author.id }, async (err, author) => {
+        const work = author.work;
+
+        if (work.register) {
+          return message.channel.send(
+            `${Emojis.Errado} - ${message.author}, você já está registrado, portanto não é possível registrar novamente.`
+          );
+        } else {
+          message.channel.send(
+            `${Emojis.Certo} - ${message.author}, parabéns por se registrar na empresa, hoje começa seus dias de sofrência, você está começando como **Lixeiro** no Level **1** com o salário de **R$${work.works.Lixeiro.coins}**, com o tempo irá upar e receber mais dinheiro em empregos melhores.`
+          );
+          await User.findOneAndUpdate(
+            { _id: message.author.id },
+            {
+              $set: {
+                "work.register": true,
+                "work.works.Lixeiro.active": true,
+              },
+            }
+          );
+        }
+      });
+      return;
     }
 
     const users =
