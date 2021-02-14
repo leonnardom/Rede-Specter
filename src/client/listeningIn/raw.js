@@ -4,7 +4,7 @@ module.exports = class {
   }
 
   async run(dados) {
-    if (dados.t !== "MESSAGE_REACTION_ADD") return;
+    /*if (dados.t !== "MESSAGE_REACTION_ADD") return;
     if (dados.d.message_id != process.env.MSGID) return;
 
     let servidor = this.client.guilds.cache.get(process.env.GUILD_ID);
@@ -26,6 +26,6 @@ module.exports = class {
               .users.remove(dados.d.user_id);
           });
       }
-    }
+    }*/
   }
 };

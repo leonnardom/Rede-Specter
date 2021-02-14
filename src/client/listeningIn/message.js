@@ -2,9 +2,9 @@ const GetMention = (id) => new RegExp(`^<@!?${id}>( |)$`);
 const User = require("../../database/Schemas/User");
 Client = require("../../database/Schemas/Client");
 Guild = require("../../database/Schemas/Guild");
-const ClientEmbed = require("../../structure/ClientEmbed");
 const Utils = require("../../utils/Util");
 const Emojis = require("../../utils/Emojis");
+const cd = [];
 
 module.exports = class {
   constructor(client) {
@@ -48,13 +48,9 @@ module.exports = class {
                 const cmdblock = server.cmdblock;
 
                 if (cmdblock.status) {
-                  if (
-                    !message.member.hasPermission("MANAGE_GUILD") ||
-                    !message.member.hasPermission("ADMINISTRATOR") ||
-                    !message.member.hasPermission("MANAGE_CHANNELS")
-                  )
+                  if (!message.member.hasPermission("MANAGE_MESSAGES")) {
                     if (
-                      !cmdblock.channels.some((x) => x === message.channel.id)
+                      cmdblock.channels.some((x) => x === message.channel.id)
                     ) {
                       if (!cmdblock.enable.some((x) => x === cmd.name)) {
                         return message.channel.send(
@@ -62,6 +58,7 @@ module.exports = class {
                         );
                       }
                     }
+                  }
                 }
                 let owners = [
                   process.env.OWNER_ID,
@@ -70,10 +67,12 @@ module.exports = class {
                   "342757511218200588",
                 ];
 
-                if (!owners.some((x) => x === message.author.id))
+                /*if (!owners.some((x) => x === message.author.id))
                   return message.channel.send(
                     `${Emojis.Errado} - ${message.author}, estou em manutenção no momento bobinho(a). ^^`
-                  );
+                  );*/
+
+                await cmd.run(message, args, prefix, utils);
 
                 if (!owners.some((x) => x === message.author.id)) {
                   if (cd.includes(message.author.id)) {
@@ -86,8 +85,6 @@ module.exports = class {
                     );
                   } else cd.push(message.author.id);
                 }
-
-                await cmd.run(message, args, prefix, utils);
               } else {
                 Guild.create({ _id: message.guild.id });
               }

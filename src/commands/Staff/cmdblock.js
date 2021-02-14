@@ -4,9 +4,7 @@ Emojis = require("../../utils/Emojis");
 
 const Guild = require("../../database/Schemas/Guild");
 
-module.exports = class CmdBlock extends (
-  Command
-) {
+module.exports = class CmdBlock extends Command {
   constructor(client) {
     super(client);
     this.client = client;
@@ -20,6 +18,11 @@ module.exports = class CmdBlock extends (
     this.guildOnly = false;
   }
   async run(message, args, prefix) {
+    if (!message.member.hasPermission("MANAGE_CHANNELS"))
+      return message.channel.send(
+        `${Emojis.Errado} - ${messaFge.author}, você precisa da permissão **MANAGE_CHANNELS** para executar este comando.`
+      );
+
     Guild.findOne({ _id: message.guild.id }, async (err, server) => {
       if (!args[0])
         return message.channel.send(
@@ -61,10 +64,6 @@ module.exports = class CmdBlock extends (
           );
         message.channel.send(EMBED);
       }
-      if (!message.member.hasPermission("MANAGE_CHANNELS"))
-        return message.channel.send(
-          `${Emojis.Errado} - ${message.author}, você precisa da permissão **MANAGE_CHANNELS** para executar este comando.`
-        );
 
       if (["add", "adicionar"].includes(args[0].toLowerCase())) {
         const channel =
